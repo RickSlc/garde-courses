@@ -42,6 +42,7 @@ cancer screening. To achieve this goal, GARDE uses well-established open source 
 incorporate rule-based algorithms that perform automated detection of patients at high risk for breast and colorectal
 cancer according to national cancer guidelines. Genetic testing is recommended for those who are detected.
 
+#### GARDE Rules ####
 <img alt="GARDE Components" style="border-width:0" src="resources/images/garde-rules.png" />
 
 ### Population Management
@@ -50,6 +51,7 @@ GARDE leverages existing EHR population health management (PHM) services and too
 GARDE's role is to identify individuals and export them to the designated GARDE PHM registry where genetic counselors
 and primary care providers can review patient records and perform PHM tasks.
 
+#### Population Health Management Tools ####
 <img alt="Population health management tools" style="border-width:0" src="resources/images/garde-phm-tools.png" />
 
 ### Bulk Outreach
