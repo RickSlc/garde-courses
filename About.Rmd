@@ -41,7 +41,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 
 <!-- Author information -->
 
-[Guilherme Del Fiol]: https://https://medicine.utah.edu/faculty/mddetail/u0420797
+[Guilherme Del Fiol]: https://medicine.utah.edu/faculty/mddetail/u0420797
 [Richard Bradshaw]: https://scholar.google.com/citations?user=0lAuthAAAAAJ&hl=en
 [John Muschelli]: https://johnmuschelli.com/
 [Candace Savonen]: https://www.cansavvy.com/

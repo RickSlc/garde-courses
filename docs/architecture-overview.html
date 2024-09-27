@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Architecture Overview | GARDE</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Architecture Overview | GARDE" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Architecture Overview | GARDE" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="index.html"/>
+<link rel="next" href="user-guide.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#available-course-formats"><i class="fa fa-check"></i><b>0.1</b> Available course formats</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="architecture-overview.html"><a href="architecture-overview.html"><i class="fa fa-check"></i><b>1</b> Architecture Overview</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="architecture-overview.html"><a href="architecture-overview.html#target-audience"><i class="fa fa-check"></i><b>1.1</b> Target Audience</a></li>
+<li class="chapter" data-level="1.2" data-path="architecture-overview.html"><a href="architecture-overview.html#introduction-to-garde"><i class="fa fa-check"></i><b>1.2</b> Introduction to GARDE</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="architecture-overview.html"><a href="architecture-overview.html#garde-standards-based-advanced-cds"><i class="fa fa-check"></i><b>1.2.1</b> GARDE – Standards-Based Advanced CDS</a></li>
+<li class="chapter" data-level="1.2.2" data-path="architecture-overview.html"><a href="architecture-overview.html#population-management"><i class="fa fa-check"></i><b>1.2.2</b> Population Management</a></li>
+<li class="chapter" data-level="1.2.3" data-path="architecture-overview.html"><a href="architecture-overview.html#bulk-outreach"><i class="fa fa-check"></i><b>1.2.3</b> Bulk Outreach</a></li>
+<li class="chapter" data-level="1.2.4" data-path="architecture-overview.html"><a href="architecture-overview.html#garde-integration-with-clinical-practice"><i class="fa fa-check"></i><b>1.2.4</b> GARDE Integration with Clinical Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="architecture-overview.html"><a href="architecture-overview.html#architectural-components"><i class="fa fa-check"></i><b>1.3</b> Architectural Components</a></li>
+<li class="chapter" data-level="1.4" data-path="architecture-overview.html"><a href="architecture-overview.html#installation-requirements"><i class="fa fa-check"></i><b>1.4</b> Installation Requirements</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="architecture-overview.html"><a href="architecture-overview.html#deployment-strategies"><i class="fa fa-check"></i><b>1.4.1</b> Deployment Strategies</a></li>
+<li class="chapter" data-level="1.4.2" data-path="architecture-overview.html"><a href="architecture-overview.html#software-installationbuild"><i class="fa fa-check"></i><b>1.4.2</b> Software Installation/Build</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="user-guide.html"><a href="user-guide.html"><i class="fa fa-check"></i><b>2</b> User Guide</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="user-guide.html"><a href="user-guide.html#login"><i class="fa fa-check"></i><b>2.1</b> Login</a></li>
+<li class="chapter" data-level="2.2" data-path="user-guide.html"><a href="user-guide.html#run-the-population-coordinator"><i class="fa fa-check"></i><b>2.2</b> Run the Population Coordinator</a></li>
+<li class="chapter" data-level="2.3" data-path="user-guide.html"><a href="user-guide.html#review-the-evaluator-rules"><i class="fa fa-check"></i><b>2.3</b> Review the Evaluator Rules</a></li>
+<li class="chapter" data-level="2.4" data-path="user-guide.html"><a href="user-guide.html#review-and-edit-terminology"><i class="fa fa-check"></i><b>2.4</b> Review and Edit Terminology</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>3</b> References</a></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GARDE</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+
+
+
+<div class="hero-image-container">
+  <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
+</div>
+<div id="architecture-overview" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Architecture Overview<a href="architecture-overview.html#architecture-overview" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter introduces GARDE’s purpose and architecture to help stake holders and decision makers understand how GARDE
+components fit into the big picture from a clinical and technical perspective. By the end of the chapter readers should
+understand 1) what GARDE is and why it was created, 2) the basic function and purpose of each architectural component,
+3) which EHR components/tools are required, 4) where the EHR integration points are, 5) how GARDE interventions are
+incorporated into clinical practice, 6) how GARDE benefits providers.</p>
+<div id="target-audience" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Target Audience<a href="architecture-overview.html#target-audience" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This chapter is intended for cancer researchers, genetic counselors, or other leaders who desire to know more about
+GARDE’s architecture and its implications.</p>
+</div>
+<div id="introduction-to-garde" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Introduction to GARDE<a href="architecture-overview.html#introduction-to-garde" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Increased evidence supports individualizing cancer screening based on risk, with selective application of specific
+screening technologies best suited to the individual. However, individualizing screening at a population scale requires
+the implementation of patient-specific risk assessments for several types of cancer. Such personalized screening is
+challenging to achieve in today’s overwhelmed primary care settings. A promising solution to this problem is to automate
+the identification and management of high-risk patients using electronic health record (EHR) technologies coupled with
+advanced clinical decision support (CDS) tools.</p>
+<p>CDS is considered a critical component for applying the latest research findings to patient care. With the Meaningful
+Use incentive program, EHR adoption in the U.S. has risen to over 80%. This ecosystem provides a unique opportunity for
+delivering effective CDS to patients and providers at a large scale. Despite supporting evidence and Federal incentives
+towards CDS adoption, advanced and effective CDS is still not widely disseminated. Significant barriers to the
+dissemination of effective CDS are still prevalent. In essence, the current CDS landscape consists largely of EHR
+systems with limited CDS capabilities, closed CDS architectures, and minimal sharing of CDS among healthcare
+organizations. With most of the healthcare organizations in the United States having migrated to commercial systems,
+there is a critical need for EHR-agnostic CDS platforms that enable sharing of advanced CDS capabilities across
+healthcare organizations.</p>
+<div id="garde-standards-based-advanced-cds" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> GARDE – Standards-Based Advanced CDS<a href="architecture-overview.html#garde-standards-based-advanced-cds" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE is a standards-based and scalable CDS platform that specializes in identifying people who require individualized
+cancer screening. To achieve this goal, GARDE uses well-established open source CDS Web services (OpenCDS) that
+incorporate rule-based algorithms that perform automated detection of patients at high risk for breast and colorectal
+cancer according to national cancer guidelines. Genetic testing is recommended for those who are detected.</p>
+<div id="garde-rules" class="section level4 hasAnchor" number="1.2.1.1">
+<h4><span class="header-section-number">1.2.1.1</span> GARDE Rules<a href="architecture-overview.html#garde-rules" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img alt="GARDE Components" style="border-width:0" src="resources/images/garde-rules.png" /></p>
+</div>
+</div>
+<div id="population-management" class="section level3 hasAnchor" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Population Management<a href="architecture-overview.html#population-management" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE leverages existing EHR population health management (PHM) services and tools to manage high risk populations.
+GARDE’s role is to identify individuals and export them to the designated GARDE PHM registry where genetic counselors
+and primary care providers can review patient records and perform PHM tasks.</p>
+<div id="population-health-management-tools" class="section level4 hasAnchor" number="1.2.2.1">
+<h4><span class="header-section-number">1.2.2.1</span> Population Health Management Tools<a href="architecture-overview.html#population-health-management-tools" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img alt="Population health management tools" style="border-width:0" src="resources/images/garde-phm-tools.png" /></p>
+</div>
+</div>
+<div id="bulk-outreach" class="section level3 hasAnchor" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Bulk Outreach<a href="architecture-overview.html#bulk-outreach" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Patient outreach is one of the critical PHM tasks required for notifying targeted individuals. To date (2023) GARDE is
+running in two large healthcare organizations, University of Utah Health and NYU Langone Health, and has identified over
+30,000 high risk individuals. To outreach to these individuals, GARDE leverages existing PHM bulk outreach tools to send
+patient communications via mailed letters or email.</p>
+<p>GARDE extends existing PHM outreach methods by embedding links to personalized conversational agents (or chatbots) into
+the outreach messages. Activated links open conversational agents that provide individualized patient education and
+questionnaires. When conversations end the conversation scripts are loaded into to the EHR where they can be reviewed,
+interpreted, and used to determine follow-up care.</p>
+<p>GARDE’s use of conversational agents is currently being investigated. To date 2,780 patients have been contacted and
+recommended individualized cancer screening via randomized controlled trial to evaluate cancer service delivery methods,
+including conversational agents (Kaphingst, 2021), and conversational agents are proving to be effective tools for
+outreach.</p>
+</div>
+<div id="garde-integration-with-clinical-practice" class="section level3 hasAnchor" number="1.2.4">
+<h3><span class="header-section-number">1.2.4</span> GARDE Integration with Clinical Practice<a href="architecture-overview.html#garde-integration-with-clinical-practice" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The GARDE software platform implicates new processes that integrate with provider practices. The following steps outline GARDE’s workflow, communications, and how they have been integrated into practice at UHealth and NYU Langone Health:</p>
+<p><strong>Step 1</strong>. GARDE identifies the target population for evaluation using data from the EHR - active primary care patients.</p>
+<p><strong>Step 2</strong>. GARDE evaluates each patient from the target population using locally adapted NCCN guidelines to determine who qualifies for genetic evaluation of breast, ovarian, prostate, or colorectal cancer.</p>
+<p><strong>Step 3</strong>. GARDE exports patients who qualify for genetic evaluation to a new PHM registry in the EHR.</p>
+<p><strong>Step 4</strong>. Under the supervision of a genetic counselors, genetic counselor assistants use the GARDE registry PHM tools to review patients’ information, send outreach communications, and track the status each patient in the care process.</p>
+<p><strong>Step 5</strong>. Genetic counselor assistants send messages to patient primary care providers a week before outreach messages are scheduled notifying them that their patient qualifies for genetic evaluation and will be contacted.</p>
+<p><strong>Step 6</strong>. If the primary care provider does not object within the week, assistants send outreach messages using the patient portal or by mail notifying the patient that they meet criteria for genetic testing.</p>
+<p><strong>Step 7</strong>. When patients receive outreach messages, they are provided with opportunities to call the genetic counseling provider directly and/or to converse with a conversational agent. When patients choose the conversional agent, the conversational agent provides additional education about familial cancers and asks if they would like to receive genetic counseling and/or a genetic evaluation.</p>
+<p><strong>Step 8</strong>. For patients who do not respond to outreach messages, three contact attempts are made by phone to contact patients who have not responded to the original outreach message.</p>
+<p><strong>Step 9</strong>. For patients who complete the conversation with the conversational agent, the full conversation is recorded and loaded into the EHR for review by genetic counseling and other providers.</p>
+<p><strong>Step 10</strong>. For patients who respond and have genetic evaluations performed, evaluation results are documented in the EHR, the primary care providers are sent results, and the patients are sent a summary of the results, personalized risk assessments, and risk-appropriate screening recommendations.</p>
+<p>These steps have been tested in two large medical organizations, UHealth and NYU Langone Health, but are malleable for organizations with different clinical role structures or EHR capabilities.</p>
+</div>
+</div>
+<div id="architectural-components" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Architectural Components<a href="architecture-overview.html#architectural-components" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img alt="GARDE Components" style="border-width:0" src="resources/images/garde-component-architecture.png" /></p>
+<p>The GARDE software platform consists of five components:</p>
+<ol style="list-style-type: decimal">
+<li>Population Coordinator - GARDE’s endpoint and choreographer that processes platform requests, transforms patient data to/from FHIR, performs population-based CDS interactions, interprets the results, and sends them to the PHM system.</li>
+<li>OpenCDS - an open-source CDS Hooks server that computes PHM cohort eligibility rules to create populations.</li>
+<li>U-Chat – an optional open-source conversational agent server with conversation authoring and deployment tools.</li>
+<li>EHR Patient Data Repository - the patient data source/database where patient data are extracted from for CDS evaluations.</li>
+<li>EHR PHM Tools - includes a registry where patients who met PHM criteria are tracked and a dashboard clinical staff use to navigate the registry, review individual patient data, and perform patient outreach functions.</li>
+</ol>
+<p>Population Coordinator, OpenCDS, and U-Chat components are Web service applications that are available for download and
+installation. The other two components, EHR Patient Data Repository and EHR PHM Tools, are pre-existing and
+organization-specific components GARDE has been designed to integrate with.</p>
+</div>
+<div id="installation-requirements" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Installation Requirements<a href="architecture-overview.html#installation-requirements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Installing GARDE requires installing the Population Coordinator and OpenCDS components, and optionally U-Chat. Each component is configuration-based and generally needs minimal adaptations to operate. Integrating GARDE with the EHR is more involved. Governance approvals are required from both clinical leadership and information technology leadership, clinical leadership to approve the implications on patient care and provider involvement, and IT leadership to approve the safety of the GARDE software.</p>
+<p><strong>Technical considerations for installation:</strong></p>
+<ul>
+<li>Determine where/how GARDE will be installed (local VM, AWS, Azure)</li>
+<li>Data pipeline architecture
+<ul>
+<li>Identify the data sources (data warehouse, EHR data services)</li>
+<li>EHR outbound data source/service to extract data for GARDE input</li>
+<li>EHR inbound data source/service to write data from GARDE</li>
+<li>Determine data completeness for the GARDE detection algorithm</li>
+<li>Local terminology code mappings and import</li>
+<li>Data de-identification y/n</li>
+</ul></li>
+<li>Security measures – network topology, communication security (ssl, https, tcl)</li>
+<li>PHM registry configuration and capability assessment
+<ul>
+<li>Update frequency – real-time, daily, weekly</li>
+<li>Data import method to add
+<ul>
+<li>patients who met criteria</li>
+<li>registry variables – met rule criteria (mother had breast cancer, age 37), chatbot links (URL to personalized chatbot)</li>
+</ul></li>
+<li>Outreach support – via patient portal, mail, …</li>
+<li>Patient status management</li>
+<li>Outreach date, method, result</li>
+<li>Chatbot status – opened, completed</li>
+<li>Genetic testing status</li>
+</ul></li>
+<li>How/when will GARDE be invoked (triggered, scheduled, ad hoc)
+<ul>
+<li>to run the algorithm and update the patient registry</li>
+<li>to update the registry with chatbot-gathered states</li>
+</ul></li>
+</ul>
+<p>Once all of these issues have been considered and addressed the installation procedures may begin.</p>
+<div id="deployment-strategies" class="section level3 hasAnchor" number="1.4.1">
+<h3><span class="header-section-number">1.4.1</span> Deployment Strategies<a href="architecture-overview.html#deployment-strategies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are currently three deployment/hosting strategies are supported:</p>
+<ol style="list-style-type: decimal">
+<li>On premises — GARDE is installed on local servers, typically VMs.</li>
+<li>Cloud deployment — GARDE is installed on a cloud solution - AWS, Utah’s Center for High Performance Computing services, and Azure in 2022.</li>
+<li>Hybrid deployment — some GARDE components are deployed on premises VMs and others are deployed on a cloud solution.</li>
+</ol>
+<p><strong>Two patient fact import strategies are offered:</strong></p>
+<ol style="list-style-type: decimal">
+<li>via direct EDW database query/access</li>
+<li>via secure structured text file sharing</li>
+</ol>
+</div>
+<div id="software-installationbuild" class="section level3 hasAnchor" number="1.4.2">
+<h3><span class="header-section-number">1.4.2</span> Software Installation/Build<a href="architecture-overview.html#software-installationbuild" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The software build and installation instructions are described in the code repository <a href="https://bitbucket.org/RickSlc/garde-project">here</a>.</p>
+
+</div>
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="user-guide.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

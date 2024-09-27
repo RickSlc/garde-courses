@@ -26,6 +26,7 @@ group:
         dest: assets/box_images/
   # Repositories to receive changes
     repos: |
+      RickSlc/guard-courses
       jhudsl/Documentation_and_Usability
       jhudsl/Informatics_Research_Leadership
       jhudsl/Data_Management_for_Cancer_Research
