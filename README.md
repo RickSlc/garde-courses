@@ -11,6 +11,10 @@ This course will teach learners:
 - What needs to be done to install and configure GARDE in a new organization
 - How to operate GARDE to identify individuals who meet guideline criteria 
 
+## Site
+
+https://rickslc.github.io/garde-courses/
+
 ## Encountering problems?
 
 If you are encountering any problems with this course, please file a GitHub issue and the authors will be contacted.
