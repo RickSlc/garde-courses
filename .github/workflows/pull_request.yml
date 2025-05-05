@@ -83,7 +83,7 @@ jobs:
       GH_PAT: ${{ secrets.GH_PAT }}
 
 ############################# Style the code ###################################
-   style-code:
+  style-code:
     name: Style code
     needs: yaml-check
     runs-on: ubuntu-latest
