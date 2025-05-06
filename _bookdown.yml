@@ -1,6 +1,7 @@
 book_filename: "GARDE"
 chapter_name: "Chapter "
-repo: https://github.com/jhudsl/OTTR_Template/
+repo: https://github.com/RickSlc/garde-courses/
+#repo: https://github.com/jhudsl/ottrpal_Template/
 rmd_files: ["index.Rmd",
             "01-GARDE-architectural-overview.Rmd",
             "02-GARDE-user-guide.Rmd",
