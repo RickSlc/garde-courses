@@ -12,7 +12,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Lead Content Instructor(s)|[Guilherme Del Fiol]|
 |Lecturer(s)| |
 |Content Author(s) | [Richard Bradshaw] |
-|Content Contributor(s)|  |
+|Content Contributor(s)| [Anne Madeo], [Jiantao Bian] |
 |Content Editor(s)/Reviewer(s) | |
 |Content Director(s) | |
 |Content Consultants | |
@@ -43,6 +43,8 @@ These credits are based on our [course contributors table guidelines](https://ww
 
 [Guilherme Del Fiol]: https://medicine.utah.edu/faculty/mddetail/u0420797
 [Richard Bradshaw]: https://scholar.google.com/citations?user=0lAuthAAAAAJ&hl=en
+[Anne Madeo]: https://scholar.google.com/
+[Jiantao Bian]: https://scholar.google.com/citations?user=FliJ45sAAAAJ&hl=en
 [John Muschelli]: https://johnmuschelli.com/
 [Candace Savonen]: https://www.cansavvy.com/
 [Carrie Wright]: https://carriewright11.github.io/

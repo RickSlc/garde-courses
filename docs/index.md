@@ -1,6 +1,6 @@
 ---
 title: "GARDE"
-date: "February, 2023"
+date: "November, 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]

@@ -1,7 +1,7 @@
 ## About this course
 
 This course introduces GARDE, a population analysis tool for identifying individuals who meet guideline criteria for 
-genetic testing. GARDE's architecture is described at a level cancer researches understand 
+genetic testing. GARDE's architecture is described at a level cancer researches understand.
 
 ## Learning Objectives
 
@@ -10,6 +10,10 @@ This course will teach learners:
 - About GARDE and how it works
 - What needs to be done to install and configure GARDE in a new organization
 - How to operate GARDE to identify individuals who meet guideline criteria 
+
+## Site
+
+https://rickslc.github.io/garde-courses/
 
 ## Encountering problems?
 

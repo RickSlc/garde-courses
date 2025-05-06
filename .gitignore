@@ -9,3 +9,8 @@
 docker/git_token.txt
 .Rproj.user
 docs/*
+/.idea/*
+/word-docs/*
+
+# ignore R data serialization files
+*.rds
