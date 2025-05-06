@@ -11,7 +11,7 @@ The chapter teaches users about GARDE's web tools used to
 
 ## Login
 
-GARDE has a web-based font end for configuring and running GARDE. The URL for the application will depend on where and
+GARDE has a web-based font end to configure and run GARDE. The URL for the application will depend on where and
 how it is installed. Get the URL, username, and password from the installer. The login page is the first page that
 appears when the URL is entered into a browser.
 
@@ -21,6 +21,9 @@ coming soon ...
 
 ## Review the Evaluator Rules
 
+coming soon ...
 
 ## Review and Edit Terminology
+
+coming soon ...
 

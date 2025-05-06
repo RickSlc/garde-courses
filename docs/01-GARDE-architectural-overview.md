@@ -115,6 +115,7 @@ organization-specific components GARDE has been designed to integrate with.
 
 Installing GARDE requires installing the Population Coordinator and OpenCDS components, and optionally U-Chat. Each component is configuration-based and generally needs minimal adaptations to operate. Integrating GARDE with the EHR is more involved. Governance approvals are required from both clinical leadership and information technology leadership, clinical leadership to approve the implications on patient care and provider involvement, and IT leadership to approve the safety of the GARDE software.
 
+
 **Technical considerations for installation:**
 
 * Determine where/how GARDE will be installed (local VM, AWS, Azure)
@@ -142,17 +143,26 @@ Installing GARDE requires installing the Population Coordinator and OpenCDS comp
 
 Once all of these issues have been considered and addressed the installation procedures may begin.
 
-### Deployment Strategies ###
-There are currently three deployment/hosting strategies are supported:
 
-1. On premises — GARDE is installed on local servers, typically VMs.
-2. Cloud deployment — GARDE is installed on a cloud solution - AWS, Utah’s Center for High Performance Computing services, and Azure in 2022.
-3. Hybrid deployment — some GARDE components are deployed on premises VMs and others are deployed on a cloud solution.
+### Deployment Requirements ###
 
-**Two patient fact import strategies are offered:**
+The GARDE components that need to be deployed are the Population Coordinator, OpenCDS, and FactDB (not shown). FactDB is a central data store that serves multiple purposes: (1) provides a persistent mechanism for GARDE tracking and managing patient cohorts, patient facts, and data provenance; (2) supports interoperability by using FHIR data elements and terminology; and (3) serves as a staging area for intermediate data to improve performance.
 
-1. via direct EDW database query/access
-2. via secure structured text file sharing
+<img alt="GARDE architecture" style="border-width:0" src="resources/images/GARDE-architecture.png" />
+
+Two deployment hosting strategies are supported:
+
+1. On premises — GARDE components are installed on the implementing site’s servers,
+typically Virtual Machines (VMs).
+2.	Cloud — GARDE components are installed on an implementing site’s cloud-based solution (via [Docker](https://www.docker.com/) or [Kubernetes](https://kubernetes.io/)). Current cloud-based solutions include [AWS](https://aws.amazon.com/) and [Azure](https://azure.microsoft.com/en-us).
+
+Detailed instructions, including the source code, for how to deploy GARDE using Docker can be found [here](https://bitbucket.org/RickSlc/garde-docker/src/main/README.md).
+
+Once deployed, GARDE requires terminology mappings between the implementing site’s family history codes and GARDE’s terminologies, which use standards such as [ICD 9](), [ICD 10](https://www.cdc.gov/nchs/icd/icd-10/index.html), [SNOMED](https://www.snomed.org/), [HL7](https://www.hl7.org/index.cfm), and [SEER](https://seer.cancer.gov/). Mappings are created by data analysts for each deployment site with help from tools provided by our team. Once completed, mappings are then loaded into GARDE where they are used to interpret family history data.
+
+Relevant patient data, including patient family history data, are extracted from the site’s EHR as input for GARDE evaluations. The Population Coordinator executes an Extract, Transform, and Load (ETL) pattern to identify and retrieve the screening population. GARDE provides query specifications for these data, and, for Epic customers, query templates. GARDE evaluations export results conducive for loading into the PHM system. Two options are available, via secure structured text file sharing, or via EHR web services APIs. Additional information about GARDE’s architecture and deployment are available elsewhere.[@Bradshaw2022]
+
+
 
 ### Software Installation/Build ###
 

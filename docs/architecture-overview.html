@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 1 Architecture Overview | GARDE</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 1 Architecture Overview | GARDE" />
   <meta property="og:type" content="book" />
@@ -53,6 +53,32 @@
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 </head>
@@ -70,10 +96,7 @@
 <a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
-<ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#available-course-formats"><i class="fa fa-check"></i><b>0.1</b> Available course formats</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About GARDE</a></li>
 <li class="chapter" data-level="1" data-path="architecture-overview.html"><a href="architecture-overview.html"><i class="fa fa-check"></i><b>1</b> Architecture Overview</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="architecture-overview.html"><a href="architecture-overview.html#target-audience"><i class="fa fa-check"></i><b>1.1</b> Target Audience</a></li>
@@ -87,7 +110,7 @@
 <li class="chapter" data-level="1.3" data-path="architecture-overview.html"><a href="architecture-overview.html#architectural-components"><i class="fa fa-check"></i><b>1.3</b> Architectural Components</a></li>
 <li class="chapter" data-level="1.4" data-path="architecture-overview.html"><a href="architecture-overview.html#installation-requirements"><i class="fa fa-check"></i><b>1.4</b> Installation Requirements</a>
 <ul>
-<li class="chapter" data-level="1.4.1" data-path="architecture-overview.html"><a href="architecture-overview.html#deployment-strategies"><i class="fa fa-check"></i><b>1.4.1</b> Deployment Strategies</a></li>
+<li class="chapter" data-level="1.4.1" data-path="architecture-overview.html"><a href="architecture-overview.html#deployment-requirements"><i class="fa fa-check"></i><b>1.4.1</b> Deployment Requirements</a></li>
 <li class="chapter" data-level="1.4.2" data-path="architecture-overview.html"><a href="architecture-overview.html#software-installationbuild"><i class="fa fa-check"></i><b>1.4.2</b> Software Installation/Build</a></li>
 </ul></li>
 </ul></li>
@@ -98,7 +121,7 @@
 <li class="chapter" data-level="2.3" data-path="user-guide.html"><a href="user-guide.html#review-the-evaluator-rules"><i class="fa fa-check"></i><b>2.3</b> Review the Evaluator Rules</a></li>
 <li class="chapter" data-level="2.4" data-path="user-guide.html"><a href="user-guide.html#review-and-edit-terminology"><i class="fa fa-check"></i><b>2.4</b> Review and Edit Terminology</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>3</b> References</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="divider"></li>
 <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
@@ -266,25 +289,31 @@ organization-specific components GARDE has been designed to integrate with.</p>
 </ul></li>
 </ul>
 <p>Once all of these issues have been considered and addressed the installation procedures may begin.</p>
-<div id="deployment-strategies" class="section level3 hasAnchor" number="1.4.1">
-<h3><span class="header-section-number">1.4.1</span> Deployment Strategies<a href="architecture-overview.html#deployment-strategies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>There are currently three deployment/hosting strategies are supported:</p>
+<div id="deployment-requirements" class="section level3 hasAnchor" number="1.4.1">
+<h3><span class="header-section-number">1.4.1</span> Deployment Requirements<a href="architecture-overview.html#deployment-requirements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The GARDE components that need to be deployed are the Population Coordinator, OpenCDS, and FactDB (not shown). FactDB is a central data store that serves multiple purposes: (1) provides a persistent mechanism for GARDE tracking and managing patient cohorts, patient facts, and data provenance; (2) supports interoperability by using FHIR data elements and terminology; and (3) serves as a staging area for intermediate data to improve performance.</p>
+<p><img alt="GARDE architecture" style="border-width:0" src="resources/images/GARDE-architecture.png" /></p>
+<p>Two deployment hosting strategies are supported:</p>
 <ol style="list-style-type: decimal">
-<li>On premises — GARDE is installed on local servers, typically VMs.</li>
-<li>Cloud deployment — GARDE is installed on a cloud solution - AWS, Utah’s Center for High Performance Computing services, and Azure in 2022.</li>
-<li>Hybrid deployment — some GARDE components are deployed on premises VMs and others are deployed on a cloud solution.</li>
+<li>On premises — GARDE components are installed on the implementing site’s servers,
+typically Virtual Machines (VMs).</li>
+<li>Cloud — GARDE components are installed on an implementing site’s cloud-based solution (via <a href="https://www.docker.com/">Docker</a> or <a href="https://kubernetes.io/">Kubernetes</a>). Current cloud-based solutions include <a href="https://aws.amazon.com/">AWS</a> and <a href="https://azure.microsoft.com/en-us">Azure</a>.</li>
 </ol>
-<p><strong>Two patient fact import strategies are offered:</strong></p>
-<ol style="list-style-type: decimal">
-<li>via direct EDW database query/access</li>
-<li>via secure structured text file sharing</li>
-</ol>
+<p>Detailed instructions, including the source code, for how to deploy GARDE using Docker can be found <a href="https://bitbucket.org/RickSlc/garde-docker/src/main/README.md">here</a>.</p>
+<p>Once deployed, GARDE requires terminology mappings between the implementing site’s family history codes and GARDE’s terminologies, which use standards such as <a href="">ICD 9</a>, <a href="https://www.cdc.gov/nchs/icd/icd-10/index.html">ICD 10</a>, <a href="https://www.snomed.org/">SNOMED</a>, <a href="https://www.hl7.org/index.cfm">HL7</a>, and <a href="https://seer.cancer.gov/">SEER</a>. Mappings are created by data analysts for each deployment site with help from tools provided by our team. Once completed, mappings are then loaded into GARDE where they are used to interpret family history data.</p>
+<p>Relevant patient data, including patient family history data, are extracted from the site’s EHR as input for GARDE evaluations. The Population Coordinator executes an Extract, Transform, and Load (ETL) pattern to identify and retrieve the screening population. GARDE provides query specifications for these data, and, for Epic customers, query templates. GARDE evaluations export results conducive for loading into the PHM system. Two options are available, via secure structured text file sharing, or via EHR web services APIs. Additional information about GARDE’s architecture and deployment are available elsewhere.<span class="citation">(<a href="#ref-Bradshaw2022">Bradshaw et al. 2022</a>)</span></p>
 </div>
 <div id="software-installationbuild" class="section level3 hasAnchor" number="1.4.2">
 <h3><span class="header-section-number">1.4.2</span> Software Installation/Build<a href="architecture-overview.html#software-installationbuild" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The software build and installation instructions are described in the code repository <a href="https://bitbucket.org/RickSlc/garde-project">here</a>.</p>
 
 </div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Bradshaw2022" class="csl-entry">
+Bradshaw, Richard L., Kensaku Kawamoto, Kimberly A. Kaphingst, Wendy K. Kohlmann, Rachel Hess, Michael C. Flynn, Claude J. Nanjo, et al. 2022. <span>“GARDE: A Standards-Based Clinical Decision Support Platform for Identifying Population Health Management Cohorts.”</span> <em>Journal of the American Medical Informatics Association</em> 29 (May): 928–36. <a href="https://doi.org/10.1093/JAMIA/OCAC028">https://doi.org/10.1093/JAMIA/OCAC028</a>.
 </div>
 </div>
 <hr>
