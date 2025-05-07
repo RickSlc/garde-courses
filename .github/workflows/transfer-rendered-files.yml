@@ -54,7 +54,7 @@ jobs:
           echo $QUIZ_REPO
 
           # Get repo check script
-          svn export --force https://github.com/${GITHUB_REPOSITORY}.git/branches/${GITHUB_REF#refs/heads/}/scripts/git_repo_check.R git_repo_check.R
+          svn export --force https://github.com/${GITHUB_REPOSITORY}/trunk/scripts/git_repo_check.R git_repo_check.R
 
           # Run repo check script
           results=$(Rscript --vanilla git_repo_check.R --repo "$GITHUB_REPOSITORY" --git_pat "$GH_PAT")
@@ -77,10 +77,10 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           # Copy over images folder
-          svn export --force https://github.com/${GITHUB_REPOSITORY}.git/branches/${GITHUB_REF#refs/heads/}/resources/chapt_screen_images resources/chapt_screen_images
+          svn export --force https://github.com/${GITHUB_REPOSITORY}/trunk/resources/chapt_screen_images resources/chapt_screen_images
 
           # Copy over _bookdown.yml
-          svn export --force https://github.com/${GITHUB_REPOSITORY}.git/branches/${GITHUB_REF#refs/heads/}/_bookdown.yml _bookdown.yml
+          svn export --force https://github.com/${GITHUB_REPOSITORY}/trunk/_bookdown.yml _bookdown.yml
 
       - name: Create PR with resources files
         if: ${{ steps.git_repo_check.outputs.git_results == 'TRUE' }}
