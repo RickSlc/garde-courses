@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F1F2F2;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{opacity:0.15;}
+	.st3{fill:none;stroke:#4F868E;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#4F868E;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#4F868E;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#4F868E;stroke-width:8;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:#AC162C;}
+	.st8{fill:#939598;}
+	.st9{fill:none;}
+	.st10{fill:#FFFFFF;}
+	.st11{font-family:'SofiaProRegular';}
+	.st12{font-size:32px;}
+	.st13{font-size:52px;}
+	.st14{letter-spacing:2;}
+	.st15{fill:none;stroke:#7EDDD3;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_2">
+	<rect class="st0" width="300" height="300"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="11.394" y1="266.106" x2="288.606" y2="-11.106">
+		<stop  offset="0.3" style="stop-color:#4F868E"/>
+		<stop  offset="1" style="stop-color:#7EDDD3"/>
+	</linearGradient>
+	<rect x="0.29" class="st1" width="299.42" height="255"/>
+	<g class="st2">
+		<polyline class="st3" points="121.84,236.03 121.84,217.54 136.29,217.54 136.29,236.03 		"/>
+		<polyline class="st4" points="129.07,217.54 129.07,190.32 150.5,190.32 150.5,217.54 		"/>
+		<polyline class="st5" points="139.78,190.32 139.78,135.28 182.65,135.28 182.65,190.32 		"/>
+		<polyline class="st5" points="225.52,190.32 225.52,135.28 268.39,135.28 268.39,190.32 		"/>
+		<polyline class="st6" points="161.22,135.28 161.22,24.97 246.95,24.97 246.95,135.28 		"/>
+		<polyline class="st4" points="171.93,217.54 171.93,190.32 193.37,190.32 193.37,217.54 		"/>
+		<polyline class="st4" points="214.8,217.54 214.8,190.32 236.24,190.32 236.24,217.54 		"/>
+		<polyline class="st4" points="257.67,217.54 257.67,190.32 279.1,190.32 279.1,217.54 		"/>
+		<polyline class="st3" points="143.27,236.03 143.27,217.54 157.73,217.54 157.73,236.03 		"/>
+		<polyline class="st3" points="164.71,236.03 164.71,217.54 179.16,217.54 179.16,236.03 		"/>
+		<polyline class="st3" points="186.14,236.03 186.14,217.54 200.6,217.54 200.6,236.03 		"/>
+		<polyline class="st3" points="207.57,236.03 207.57,217.54 222.03,217.54 222.03,236.03 		"/>
+		<polyline class="st3" points="229.01,236.03 229.01,217.54 243.46,217.54 243.46,236.03 		"/>
+		<polyline class="st3" points="250.44,236.03 250.44,217.54 264.9,217.54 264.9,236.03 		"/>
+		<polyline class="st3" points="271.87,236.03 271.87,217.54 286.33,217.54 286.33,236.03 		"/>
+	</g>
+</g>
+<g id="Layer_1">
+	<g>
+		<path class="st7" d="M69.46,279.47h-1.9v6.18h-2.48v-16.57h6.32c3.63,0,5.1,2.62,5.1,5.24c0,2.38-1.2,4.71-4.26,5.1l4.4,6.23
+			h-2.96L69.46,279.47z M67.56,277.31h3.25c2.28,0,3.22-1.23,3.22-2.98c0-1.73-1.03-2.98-2.64-2.98h-3.82V277.31z"/>
+		<path class="st7" d="M90.19,283.39v2.26H80.04v-16.57h9.93v2.26h-7.48v5.03h6.52v2.28h-6.52v4.74H90.19z"/>
+		<path class="st7" d="M93.65,269.08h2.48v16.57h-2.48V269.08z"/>
+		<path class="st7" d="M117.06,285.65l-1.47-12.02l-4.93,10.2h-2.12l-4.98-10.2l-1.47,12.02h-2.45l2.02-16.57h2.21l5.7,11.93
+			l5.7-11.93h2.21l2.02,16.57H117.06z"/>
+		<path class="st7" d="M131.85,281.47h-6.88l-1.54,4.18h-2.6l6.28-16.57h2.65l6.25,16.57h-2.6L131.85,281.47z M131.06,279.3
+			l-2.64-7.14l-2.65,7.14H131.06z"/>
+		<path class="st7" d="M136.85,277.4c0-4.71,3.68-8.51,8.39-8.51c2.26,0,4.28,0.87,5.72,2.28l-1.73,1.59
+			c-1.03-0.96-2.45-1.59-3.99-1.59c-3.34,0-5.91,2.81-5.91,6.23c0,3.39,2.57,6.2,5.91,6.2c2.69,0,4.76-1.49,5.12-3.82
+			c0.02-0.12,0.05-0.26,0.05-0.41h-4.76v-2.12h7.48c0,5.89-3.13,8.63-7.89,8.63C140.53,285.89,136.85,282.09,136.85,277.4z"/>
+		<path class="st7" d="M156.08,269.08h2.48v16.57h-2.48V269.08z"/>
+		<path class="st7" d="M175.08,269.08v16.57h-2.33l-7.24-12.07v12.07h-2.48v-16.57h2.4l7.17,11.97v-11.97H175.08z"/>
+		<path class="st7" d="M189.69,283.39v2.26h-10.15v-16.57h9.93v2.26H182v5.03h6.52v2.28H182v4.74H189.69z"/>
+		<path class="st8" d="M203.08,284.16v1.49h-9.71v-16.57h9.45v1.49h-7.89v6.2h6.88v1.49h-6.88v5.89H203.08z"/>
+		<path class="st8" d="M219.07,269.08v16.57h-1.59v-7.53h-9.11v7.53h-1.59v-16.57h1.59v7.62h9.11v-7.62H219.07z"/>
+		<path class="st8" d="M230.2,279.16l4.59,6.49h-1.92l-4.54-6.49h-2.76v6.49h-1.59v-16.57h6.16c3.46,0,4.79,2.5,4.79,5.05
+			C234.91,276.66,233.62,279.08,230.2,279.16z M225.56,277.69h4.18c2.6,0,3.58-1.59,3.58-3.56c0-1.97-1.06-3.56-3.17-3.56h-4.59
+			V277.69z"/>
+	</g>
+	<rect x="30.29" y="53.13" class="st9" width="256.87" height="142.39"/>
+	<text transform="matrix(1 0 0 1 30.2896 76.1993)"><tspan x="0" y="0" class="st10 st11 st12">Genetic Cancer </tspan><tspan x="0" y="40" class="st10 st11 st12">Risk Detector</tspan><tspan x="0" y="100" class="st10 st11 st13 st14">GARDE</tspan></text>
+	<line class="st15" x1="35.29" y1="206.09" x2="101.66" y2="206.09"/>
+</g>
+</svg>
