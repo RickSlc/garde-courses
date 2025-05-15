@@ -8,15 +8,33 @@ GARDE is an open-source software platform, funded by several grants from
 the National Cancer Institute, that enables population-level risk
 assessment and genetic testing for conditions (e.g., cancer, familial
 hypercholesterolemia) for which there are guidelines that support
-genetic testing. GARDE has two main components: (i) **population-level
-risk assessment algorithms** that analyze patient data in the electronic
+genetic testing.
+GARDE has two main components:
+
+1.   **population-level risk assessment algorithms** that analyze patient data in the electronic
 health record (EHR) to identify patients who meet criteria for genetic
-testing; and (ii) an automated **chatbot** for patient outreach, pretest
-education, and access to genetic testing. GARDE uses an open
-architecture, external to the EHR, and is integrated with the EHR
+testing (Figure 1); and
+
+<figure>
+<img alt="GARDE architecture" style="border-width:0" src="resources/images/GARDE_workflow.png" />
+<figcaption><p>Figure 1. GARDE workflow.</p></figcaption>
+</figure>
+
+2.   an automated **chatbot** for patient outreach, pretest
+education, and access to genetic testing (Figure 2).
+
+<figure>
+<img alt="GARDE architecture" style="border-width:0" src="resources/images/Chatbot_example.png" />
+<figcaption><p>Figure 2. Chatbot example.</p></figcaption>
+</figure>
+
+GARDE uses an open architecture, external to the EHR, and is integrated with the EHR
 through standards-based Web services.
 
-# Governance Review and Approval
+
+# GARDE Implementation
+
+## Governance Review and Approval
 
 Most healthcare systems (HCS) have a governance committee that reviews
 proposals for implementation of information technology (IT) tools.
@@ -36,34 +54,53 @@ overarching goals of governance reviews are typically to:
 4.  ensure there are robust channels for user feedback and the
     dissemination of systems-related information to end users
 
-# Important Information about GARDE
+### Additional information
 
-1.  The deployment hosting strategy is determined by the HCS to meet
-    their unique needs and resources. GARDE staff are available to
-    consult on this decision as desired.
+1.  GARDE is highly customizable. Resources necessary for a successful
+implementation will vary depending on implementing HCS factors and
+decisions, such as:
 
-2.  GARDE does NOT require that patient data leave the HCS. Regardless
-    of deployment strategy, the entire approach, including all aspects
-    of the GARDE architecture, is HIPAA compliant for handling PHI.
+    1)  Local IT architecture
 
-3.  GARDE has successfully undergone security review and approval at 6
-    academic medical centers across the US.
+    2)  How is Population Health Management function accomplished? (e.g.
+Epic? REDCap?)
 
-## Previous GARDE implementation
+    3)  How are patient outreach and education accomplished? (e.g.
+Chatbot? Clinical staff?)
 
-GARDE supported the Broadening the Reach, Impact, and Delivery of
-Genetic Services (BRIDGE) randomized controlled trial, which compared
-the effectiveness of chatbot-based delivery of cancer genetic services
-compared to standard care (SOC) among 3073 unaffected primary care
-patients in two large healthcare systems.[^1] The study found that
-chatbots are equivalent to SOC in terms of uptake of pretest cancer
-genetic services and genetic testing. BRIDGE results suggest that
-chatbots offer a scalable and secure way to deliver genetic services,
-allowing genetic counselors to focus on more specialized care.
+    4)  How often is the target population evaluated? (e.g. One time?
+Weekly?)
 
-# What can facilitate governance review?
+    5)  Number of individuals in the target population for GARDE
+evaluation (e.g. does the target population include all patients
+seen within HCS? All patients who saw a HCS primary care
+provider for an outpatient visit within past 36 months? Only
+patients who have electronic patient portal account? Patient age
+range? Individuals with or without target condition?).
 
-## Identify key stakeholders and champions for your project
+    6)  Condition(s) that GARDE evaluates (e.g. hereditary cancer
+syndrome(s)? Familial hypercholesterolemia?)
+
+    7) Local patient population characteristics (e.g. proportion with
+commercial vs. government-supported health insurance vs.
+uninsured? Proportion with Ashkenazi Jewish ancestry?)
+
+    8)  Tasks necessary to implement GARDE (e.g. are all patients
+considering genetic testing referred for genetic counseling?
+will the implementation include both PHM algorithms and
+chatbot?)
+
+2.  In the BRIDGE trial, research eligibility screening and patient
+outreach by a genetic counseling assistant required on average a
+couple of minutes per patient.
+
+
+
+## What can facilitate governance review?
+
+To help you prepare for governance review within your HCS, following is information that may help you, including a description of [GARDE architecture](#garde-architecture), [GARDE deployment requirements](#deployment-requirements) and an estimate of the [IT](#it-human-resources) and [Clinical](#clinical-human-resources) Human Resources that may facilitate GARDE implementation.
+
+### Identify key stakeholders and champions for your project
 
 We recommend that you consider identifying representatives from the
   following stakeholder groups to support your review.
@@ -82,21 +119,15 @@ We recommend that you consider identifying representatives from the
 
   - Patient communication committee (this may be a part of EHR/IT)
 
-To help you prepare for governance review within your HCS, following is
-information on a successful implementation of GARDE in 2 HCSs, GARDE’s
-architecture, GARDE deployment requirements and an estimate of the IT
-and Clinical Human Resources that may facilitate GARDE implementation.
-Beyond governance review, many HCSs have additional formal review
-processes (e.g. IT, Clinical, Patient Communication) that you should
-anticipate.
 
-## GARDE Architecture
+
+### GARDE Architecture
 
 Overall, the GARDE architecture contains four components: *OpenCDS*,
 *Population Coordinator*, EHR *Patient Data Repository* (e.g., Epic’s
 Clarity or other patient data repository), and Population Health
 Management (PHM) tools (e.g., Epic’s Healthy Planet, REDCap) (see Figure
-1). [OpenCDS](https://www.opencds.org/) is an open-source [CDS
+3). [OpenCDS](https://www.opencds.org/) is an open-source [CDS
 Hooks](https://cds-hooks.org/)-compliant server that computes patient
 eligibility for PHM cohorts. Population Coordinator is the application
 endpoint and service choreographer that receives platform requests,
@@ -109,10 +140,16 @@ tracked and a dashboard that clinical staff (in Figure 1, an assistant)
 use to navigate the registry, review individual patient data, and
 perform patient outreach functions.
 
-## Deployment Requirements
+<figure>
+<img alt="GARDE architecture" style="border-width:0" src="resources/images/GARDE-architecture.png" />
+<figcaption><p>Figure 3. GARDE architecture. EHR or REDCap can perform
+Population Health Management.</p></figcaption>
+</figure>
+
+### Deployment Requirements
 
 The GARDE components that need to be deployed are the Population
-Coordinator, OpenCDS (Figure 1), and FactDB (not shown). FactDB is a
+Coordinator, OpenCDS (Figure 3), and FactDB (not shown). FactDB is a
 central data store that serves multiple purposes: (1) provides a
 persistent mechanism for GARDE tracking and managing patient cohorts,
 patient facts, and data provenance; (2) supports interoperability by
@@ -130,11 +167,7 @@ Two deployment hosting strategies are supported:
     include [AWS](https://aws.amazon.com/) and
     [Azure](https://azure.microsoft.com/en-us).
 
-<figure>
-<img alt="GARDE architecture" style="border-width:0" src="resources/images/GARDE-architecture.png" />
-<figcaption><p>Figure 1. GARDE architecture. EHR or REDCap can perform
-Population Health Management.</p></figcaption>
-</figure>
+
 
 Detailed instructions, including the source code, for how to deploy
 GARDE using Docker can be found
@@ -160,7 +193,7 @@ into the PHM system. Two options are available, via secure structured
 text file sharing, or via EHR web services APIs. Additional information
 about GARDE’s architecture and deployment are available elsewhere.[^2]
 
-# IT Human Resources
+## IT Human Resources
 
 Based on GARDE implementation in BRIDGE, below is an estimate of the IT
 human resources necessary for its successful implementation over the
@@ -168,7 +201,7 @@ initial 8 months. Some tasks may require \>1 individual. The exact
 number of hours necessary will vary depending on how GARDE is
 implemented.
 
-## GARDE planning
+### Planning
 
 <u>Overall</u>: ~3 months of weekly or biweekly team
 planning/coordination meetings (will likely include non-IT personnel,
@@ -181,7 +214,7 @@ only IT personnel tasks below)
 | **TOTAL** | **60** |
 
 
-## GARDE Deployment options
+### Deployment
 
 (only one deployment option (virtual machine OR cloud-based) is
 necessary)
@@ -275,7 +308,7 @@ approvals/oversight</td>
 \* Amount of time necessary will depend on HCS ability to support
 GARDE-established cloud deployments (AWS or Azure) and staff experience.
 
-## Epic Integration
+### Epic Integration
 
 <table>
 <colgroup>
@@ -328,14 +361,14 @@ GARDE-established cloud deployments (AWS or Azure) and staff experience.
 </tbody>
 </table>
 
-## Chatbot integration and deployment
+### Chatbot integration and deployment
 
 | **Task** | **Hours** |
 |----|---:|
 | Install GARDE chatbot, ETL chatbot data/ states to SDE, ETL chatbot links to EHR | 40 |
 | **TOTAL** | **40** |
 
-## Operations & Maintenance
+### Operations & Maintenance
 
 | <u>On premise server</u> |  |  | <u>Institution-selected cloud service (e.g. AWS, Azure)</u> |  |
 |----|----|----|----|----|
@@ -347,14 +380,14 @@ GARDE-established cloud deployments (AWS or Azure) and staff experience.
 deployment and amount of trouble-shooting necessary. Cloud-based
 solutions other than AWS or Azure will require more time.
 
-# Clinical Human Resources
+## Clinical Human Resources
 
 Based on GARDE implementation in BRIDGE, below is an estimate of the
 clinical human resources necessary for its successful implementation
 over the initial 3 months. The exact number of hours necessary will vary
 depending on how GARDE is implemented.
 
-## GARDE planning
+### Planning
 
 <u>Overall: ~3 months of weekly or biweekly team planning/coordination
 meetings (will likely</u>
@@ -411,45 +444,7 @@ hour/week/person)</td>
 </tbody>
 </table>
 
-**Additional information**
 
-1.  GARDE is highly customizable. Resources necessary for a successful
-    implementation will vary depending on implementing HCS factors and
-    decisions, such as:
-
-    1)  Local IT architecture
-
-    2)  How is Population Health Management function accomplished? (e.g.
-        Epic? REDCap?)
-
-    3)  How are patient outreach and education accomplished? (e.g.
-        Chatbot? Clinical staff?)
-
-    4)  How often is the target population evaluated? (e.g. One time?
-        Weekly?)
-
-    5)  Number of individuals in the target population for GARDE
-        evaluation (e.g. does the target population include all patients
-        seen within HCS? All patients who saw a HCS primary care
-        provider for an outpatient visit within past 36 months? Only
-        patients who have electronic patient portal account? Patient age
-        range? Individuals with or without target condition?).
-
-    6)  Condition(s) that GARDE evaluates (e.g. hereditary cancer
-        syndrome(s)? Familial hypercholesterolemia?)
-
-    7)  Local patient population characteristics (e.g. proportion with
-        commercial vs. government-supported health insurance vs.
-        uninsured? Proportion with Ashkenazi Jewish ancestry?)
-
-    8)  Tasks necessary to implement GARDE (e.g. are all patients
-        considering genetic testing referred for genetic counseling?
-        will the implementation include both PHM algorithms and
-        chatbot?)
-
-2.  In the BRIDGE trial, research eligibility screening and patient
-    outreach by a genetic counseling assistant required on average a
-    couple of minutes per patient.
 
 [^1]: Kaphingst KA, Kohlmann WK, Lorenz Chambers R, et al. Uptake of
     Cancer Genetic Services for Chatbot vs Standard-of-Care Delivery
