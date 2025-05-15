@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 GARDE Implementation | GARDE</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 GARDE Implementation | GARDE" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 GARDE Implementation | GARDE" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="what-is-garde.html"/>
+<link rel="next" href="about-the-authors.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://reimagineehr.utah.edu/innovations/garde/"><img src="resources/images/garde-cyan.svg" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About GARDE</a></li>
+<li class="chapter" data-level="1" data-path="what-is-garde.html"><a href="what-is-garde.html"><i class="fa fa-check"></i><b>1</b> What is GARDE?</a></li>
+<li class="chapter" data-level="2" data-path="garde-implementation.html"><a href="garde-implementation.html"><i class="fa fa-check"></i><b>2</b> GARDE Implementation</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="garde-implementation.html"><a href="garde-implementation.html#governance-review-and-approval"><i class="fa fa-check"></i><b>2.1</b> Governance Review and Approval</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="garde-implementation.html"><a href="garde-implementation.html#additional-information"><i class="fa fa-check"></i><b>2.1.1</b> Additional information</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="garde-implementation.html"><a href="garde-implementation.html#what-can-facilitate-governance-review"><i class="fa fa-check"></i><b>2.2</b> What can facilitate governance review?</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="garde-implementation.html"><a href="garde-implementation.html#identify-key-stakeholders-and-champions-for-your-project"><i class="fa fa-check"></i><b>2.2.1</b> Identify key stakeholders and champions for your project</a></li>
+<li class="chapter" data-level="2.2.2" data-path="garde-implementation.html"><a href="garde-implementation.html#garde-architecture"><i class="fa fa-check"></i><b>2.2.2</b> GARDE Architecture</a></li>
+<li class="chapter" data-level="2.2.3" data-path="garde-implementation.html"><a href="garde-implementation.html#deployment-requirements"><i class="fa fa-check"></i><b>2.2.3</b> Deployment Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="garde-implementation.html"><a href="garde-implementation.html#it-human-resources"><i class="fa fa-check"></i><b>2.3</b> IT Human Resources</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="garde-implementation.html"><a href="garde-implementation.html#planning"><i class="fa fa-check"></i><b>2.3.1</b> Planning</a></li>
+<li class="chapter" data-level="2.3.2" data-path="garde-implementation.html"><a href="garde-implementation.html#deployment"><i class="fa fa-check"></i><b>2.3.2</b> Deployment</a></li>
+<li class="chapter" data-level="2.3.3" data-path="garde-implementation.html"><a href="garde-implementation.html#epic-integration"><i class="fa fa-check"></i><b>2.3.3</b> Epic Integration</a></li>
+<li class="chapter" data-level="2.3.4" data-path="garde-implementation.html"><a href="garde-implementation.html#chatbot-integration-and-deployment"><i class="fa fa-check"></i><b>2.3.4</b> Chatbot integration and deployment</a></li>
+<li class="chapter" data-level="2.3.5" data-path="garde-implementation.html"><a href="garde-implementation.html#operations-maintenance"><i class="fa fa-check"></i><b>2.3.5</b> Operations &amp; Maintenance</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="garde-implementation.html"><a href="garde-implementation.html#clinical-human-resources"><i class="fa fa-check"></i><b>2.4</b> Clinical Human Resources</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="garde-implementation.html"><a href="garde-implementation.html#planning-1"><i class="fa fa-check"></i><b>2.4.1</b> Planning</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GARDE</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+
+
+
+<div class="hero-image-container">
+  <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
+</div>
+<div id="garde-implementation" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> GARDE Implementation<a href="garde-implementation.html#garde-implementation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="governance-review-and-approval" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Governance Review and Approval<a href="garde-implementation.html#governance-review-and-approval" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Most healthcare systems (HCS) have a governance committee that reviews
+proposals for implementation of information technology (IT) tools.
+Undergoing governance review and obtaining approval is a critical early
+step to take once you have decided to implement GARDE. The governance
+review and approval processes vary across institutions, but the
+overarching goals of governance reviews are typically to:</p>
+<ol style="list-style-type: decimal">
+<li><p>prioritize implementation/customization of EHR functionality</p></li>
+<li><p>assess the potential impact of new/customized functionality on
+existing clinical information systems, clinicians and patients</p></li>
+<li><p>assess the effort needed to implement/customize the EHR
+functionality</p></li>
+<li><p>ensure there are robust channels for user feedback and the
+dissemination of systems-related information to end users</p></li>
+</ol>
+<div id="additional-information" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Additional information<a href="garde-implementation.html#additional-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li><p>GARDE is highly customizable. Resources necessary for a successful
+implementation will vary depending on implementing HCS factors and
+decisions, such as:</p>
+<ol style="list-style-type: decimal">
+<li><p>Local IT architecture</p></li>
+<li><p>How is Population Health Management function accomplished? (e.g.
+Epic? REDCap?)</p></li>
+<li><p>How are patient outreach and education accomplished? (e.g.
+Chatbot? Clinical staff?)</p></li>
+<li><p>How often is the target population evaluated? (e.g. One time?
+Weekly?)</p></li>
+<li><p>Number of individuals in the target population for GARDE
+evaluation (e.g. does the target population include all patients
+seen within HCS? All patients who saw a HCS primary care
+provider for an outpatient visit within past 36 months? Only
+patients who have electronic patient portal account? Patient age
+range? Individuals with or without target condition?).</p></li>
+<li><p>Condition(s) that GARDE evaluates (e.g. hereditary cancer
+syndrome(s)? Familial hypercholesterolemia?)</p></li>
+<li><p>Local patient population characteristics (e.g. proportion with
+commercial vs. government-supported health insurance vs.
+uninsured? Proportion with Ashkenazi Jewish ancestry?)</p></li>
+<li><p>Tasks necessary to implement GARDE (e.g. are all patients
+considering genetic testing referred for genetic counseling?
+will the implementation include both PHM algorithms and
+chatbot?)</p></li>
+</ol></li>
+<li><p>In the BRIDGE trial, research eligibility screening and patient
+outreach by a genetic counseling assistant required on average a
+couple of minutes per patient.</p></li>
+</ol>
+</div>
+</div>
+<div id="what-can-facilitate-governance-review" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> What can facilitate governance review?<a href="garde-implementation.html#what-can-facilitate-governance-review" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To help you prepare for governance review within your HCS, following is information that may help you, including a description of <a href="garde-implementation.html#garde-architecture">GARDE architecture</a>, <a href="garde-implementation.html#deployment-requirements">GARDE deployment requirements</a> and an estimate of the <a href="garde-implementation.html#it-human-resources">IT</a> and <a href="garde-implementation.html#clinical-human-resources">Clinical</a> Human Resources that may facilitate GARDE implementation.</p>
+<div id="identify-key-stakeholders-and-champions-for-your-project" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Identify key stakeholders and champions for your project<a href="garde-implementation.html#identify-key-stakeholders-and-champions-for-your-project" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We recommend that you consider identifying representatives from the
+following stakeholder groups to support your review.</p>
+<ul>
+<li><p>Relevant clinical stakeholders, such as:</p>
+<ul>
+<li><p>Providers (e.g., primary care) whose patients will be evaluated by
+GARDE</p></li>
+<li><p>Cancer genetics/genetic counseling specialists</p></li>
+<li><p>If available, clinicians who care for patients with hereditary
+cancer predisposition syndromes</p></li>
+</ul></li>
+<li><p>IT: EHR/Health IT, information security</p></li>
+<li><p>Patient communication committee (this may be a part of EHR/IT)</p></li>
+</ul>
+</div>
+<div id="garde-architecture" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> GARDE Architecture<a href="garde-implementation.html#garde-architecture" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Overall, the GARDE architecture contains four components: <em>OpenCDS</em>,
+<em>Population Coordinator</em>, EHR <em>Patient Data Repository</em> (e.g., Epic’s
+Clarity or other patient data repository), and Population Health
+Management (PHM) tools (e.g., Epic’s Healthy Planet, REDCap) (see Figure
+3). <a href="https://www.opencds.org/">OpenCDS</a> is an open-source <a href="https://cds-hooks.org/">CDS
+Hooks</a>-compliant server that computes patient
+eligibility for PHM cohorts. Population Coordinator is the application
+endpoint and service choreographer that receives platform requests,
+processes population data (transforms to/from Fast Healthcare
+Interoperability Resources (<a href="https://www.hl7.org/fhir/">FHIR</a>)), and
+sends evaluation conclusions to the PHM system. EHR Patient Data
+Repository is the source for patient data used by the GARDE logic. EHR
+PHM Tools include a registry where patients who met PHM criteria are
+tracked and a dashboard that clinical staff (in Figure 1, an assistant)
+use to navigate the registry, review individual patient data, and
+perform patient outreach functions.</p>
+<figure>
+<img alt="GARDE architecture" style="border-width:0" src="resources/images/GARDE-architecture.png" />
+<figcaption>
+<p>
+Figure 3. GARDE architecture. EHR or REDCap can perform
+Population Health Management.
+</p>
+</figcaption>
+</figure>
+</div>
+<div id="deployment-requirements" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Deployment Requirements<a href="garde-implementation.html#deployment-requirements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The GARDE components that need to be deployed are the Population
+Coordinator, OpenCDS (Figure 3), and FactDB (not shown). FactDB is a
+central data store that serves multiple purposes: (1) provides a
+persistent mechanism for GARDE tracking and managing patient cohorts,
+patient facts, and data provenance; (2) supports interoperability by
+using FHIR data elements and terminology; and (3) serves as a staging
+area for intermediate data to improve performance.</p>
+<p>Two deployment hosting strategies are supported:</p>
+<ol style="list-style-type: decimal">
+<li><p>On premises — GARDE components are installed on the implementing
+site’s servers, typically Virtual Machines (VMs).</p></li>
+<li><p>Cloud — GARDE components are installed on an implementing site’s
+cloud-based solution (via <a href="https://www.docker.com/">Docker</a> or
+<a href="https://kubernetes.io/">Kubernetes</a>). Current cloud-based solutions
+include <a href="https://aws.amazon.com/">AWS</a> and
+<a href="https://azure.microsoft.com/en-us">Azure</a>.</p></li>
+</ol>
+<p>Detailed instructions, including the source code, for how to deploy
+GARDE using Docker can be found
+<a href="https://bitbucket.org/RickSlc/garde-docker/src/main/README.md">here</a>.</p>
+<p>Once deployed, GARDE requires terminology mappings between the
+implementing site’s family history codes and GARDE’s terminologies,
+which use standards such as ICD 9, <a href="https://www.cdc.gov/nchs/icd/icd-10/index.html">ICD
+10</a>,
+<a href="https://www.snomed.org/">SNOMED</a>, <a href="https://www.hl7.org/index.cfm">HL7</a>,
+and <a href="https://seer.cancer.gov/">SEER</a>. Mappings are created by data
+analysts for each deployment site with help from tools provided by our
+team. Once completed, mappings are then loaded into GARDE where they are
+used to interpret family history data.</p>
+<p>Relevant patient data, including patient family history data, are
+extracted from the site’s EHR as input for GARDE evaluations. The
+Population Coordinator executes an Extract, Transform, and Load (ETL)
+pattern to identify and retrieve the screening population. GARDE
+provides query specifications for these data, and, for Epic customers,
+query templates. GARDE evaluations export results conducive for loading
+into the PHM system. Two options are available, via secure structured
+text file sharing, or via EHR web services APIs. Additional information
+about GARDE’s architecture and deployment are available elsewhere.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+</div>
+</div>
+<div id="it-human-resources" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> IT Human Resources<a href="garde-implementation.html#it-human-resources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Based on GARDE implementation in BRIDGE, below is an estimate of the IT
+human resources necessary for its successful implementation over the
+initial 8 months. Some tasks may require &gt;1 individual. The exact
+number of hours necessary will vary depending on how GARDE is
+implemented.</p>
+<div id="planning" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Planning<a href="garde-implementation.html#planning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><u>Overall</u>: ~3 months of weekly or biweekly team
+planning/coordination meetings (will likely include non-IT personnel,
+only IT personnel tasks below)</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Task</strong></th>
+<th align="right"><strong>Hours</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Requirements gathering about creating HCS compliant interface between GARDE and Epic, elicit additional code specific requirements identified while building/coding software (1 hour/week/person)</td>
+<td align="right">54</td>
+</tr>
+<tr class="even">
+<td>Manage project (1 hour/week/person)</td>
+<td align="right">6</td>
+</tr>
+<tr class="odd">
+<td><strong>TOTAL</strong></td>
+<td align="right"><strong>60</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="deployment" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Deployment<a href="garde-implementation.html#deployment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>(only one deployment option (virtual machine OR cloud-based) is
+necessary)</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 8%" />
+<col style="width: 2%" />
+<col style="width: 39%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th>
+<u>On premise server</u>
+</th>
+<th>
+</th>
+<th>
+</th>
+<th>
+<u>Institution-selected cloud service (e.g. AWS, Azure)</u>
+</th>
+<th>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<strong>Task</strong>
+</td>
+<td>
+<strong>Hours</strong>
+</td>
+<td>
+</td>
+<td>
+<strong>Task</strong>
+</td>
+<td>
+<strong>Hours</strong>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+Security review, design GARDE implementation plan, provide
+</p>
+<p>
+approvals/oversight
+</p>
+</td>
+<td style="text-align: right;">
+10
+</td>
+<td>
+</td>
+<td>
+Security review, design GARDE implementation plan, provide
+approvals/oversight
+</td>
+<td style="text-align: right;">
+10
+</td>
+</tr>
+<tr>
+<td>
+Request virtual machine, install GARDE, configure, test
+</td>
+<td style="text-align: right;">
+16
+</td>
+<td>
+</td>
+<td>
+Develop GARDE system architecture appropriate for HCS
+</td>
+<td style="text-align: right;">
+24
+</td>
+</tr>
+<tr>
+<td>
+Enterprise data warehouse (EDW) project approval/oversight
+</td>
+<td style="text-align: right;">
+2
+</td>
+<td>
+</td>
+<td>
+Create virtual private cloud
+</td>
+<td style="text-align: right;">
+24
+</td>
+</tr>
+<tr>
+<td>
+Build EDW schema, grant access, review design
+</td>
+<td style="text-align: right;">
+8
+</td>
+<td>
+</td>
+<td>
+Configure queries to extract data for GARDE input
+</td>
+<td style="text-align: right;">
+16
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td style="text-align: right;">
+</td>
+<td>
+</td>
+<td>
+ETL Process - move GARDE input data to cloud
+</td>
+<td style="text-align: right;">
+12
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td style="text-align: right;">
+</td>
+<td>
+</td>
+<td>
+Adapt GARDE to run and input/output on cloud
+</td>
+<td style="text-align: right;">
+TBD*
+</td>
+</tr>
+<tr>
+<td>
+Map EHR codes to GARDE codes
+</td>
+<td style="text-align: right;">
+8
+</td>
+<td>
+</td>
+<td>
+Map EHR codes to GARDE codes
+</td>
+<td style="text-align: right;">
+8
+</td>
+</tr>
+<tr>
+<td>
+<strong>TOTAL</strong>
+</td>
+<td style="text-align: right;">
+<strong>44</strong>
+</td>
+<td>
+</td>
+<td>
+<strong>TOTAL</strong>
+</td>
+<td style="text-align: right;">
+<strong>106</strong>
+</td>
+</tr>
+</tbody>
+</table>
+<p>* Amount of time necessary will depend on HCS ability to support
+GARDE-established cloud deployments (AWS or Azure) and staff experience.</p>
+</div>
+<div id="epic-integration" class="section level3 hasAnchor" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Epic Integration<a href="garde-implementation.html#epic-integration" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col style="width: 87%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>
+<strong>Task</strong>
+</th>
+<th style="text-align: right;">
+<strong>Hours</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<blockquote>
+<p>
+Health Planet Registry (HPR) build
+</p>
+</blockquote>
+</td>
+<td style="text-align: right;">
+<blockquote>
+<p>
+60
+</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p>
+ETL to populate HPR
+</p>
+</blockquote>
+</td>
+<td style="text-align: right;">
+<blockquote>
+<p>
+32
+</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p>
+Smart Data Element (SDE) read/write interface
+</p>
+</blockquote>
+</td>
+<td style="text-align: right;">
+<blockquote>
+<p>
+32
+</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p>
+GARDE interface to Epic
+</p>
+</blockquote>
+</td>
+<td style="text-align: right;">
+<blockquote>
+<p>
+16
+</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<strong>TOTAL</strong>
+</td>
+<td style="text-align: right;">
+<strong>140</strong>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="chatbot-integration-and-deployment" class="section level3 hasAnchor" number="2.3.4">
+<h3><span class="header-section-number">2.3.4</span> Chatbot integration and deployment<a href="garde-implementation.html#chatbot-integration-and-deployment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Task</strong></th>
+<th align="right"><strong>Hours</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Install GARDE chatbot, ETL chatbot data/ states to SDE, ETL chatbot links to EHR</td>
+<td align="right">40</td>
+</tr>
+<tr class="even">
+<td><strong>TOTAL</strong></td>
+<td align="right"><strong>40</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="operations-maintenance" class="section level3 hasAnchor" number="2.3.5">
+<h3><span class="header-section-number">2.3.5</span> Operations &amp; Maintenance<a href="garde-implementation.html#operations-maintenance" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><u>On premise server</u></th>
+<th></th>
+<th></th>
+<th><u>Institution-selected cloud service (e.g. AWS, Azure)</u></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Task</strong></td>
+<td><strong>Hours</strong></td>
+<td></td>
+<td><strong>Task</strong></td>
+<td><strong>Hours</strong></td>
+</tr>
+<tr class="even">
+<td>Oversee GARDE operations. Apply fixes/security patches</td>
+<td>12</td>
+<td></td>
+<td>Oversee GARDE operations. Apply fixes/security patches</td>
+<td>??**</td>
+</tr>
+<tr class="odd">
+<td><strong>TOTAL</strong></td>
+<td><strong>12</strong></td>
+<td></td>
+<td><strong>TOTAL</strong></td>
+<td><strong>??**</strong></td>
+</tr>
+</tbody>
+</table>
+<p>**Amount of time necessary will depend on complexities of cloud
+deployment and amount of trouble-shooting necessary. Cloud-based
+solutions other than AWS or Azure will require more time.</p>
+</div>
+</div>
+<div id="clinical-human-resources" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Clinical Human Resources<a href="garde-implementation.html#clinical-human-resources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Based on GARDE implementation in BRIDGE, below is an estimate of the
+clinical human resources necessary for its successful implementation
+over the initial 3 months. The exact number of hours necessary will vary
+depending on how GARDE is implemented.</p>
+<div id="planning-1" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Planning<a href="garde-implementation.html#planning-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><u>Overall: ~3 months of weekly or biweekly team planning/coordination
+meetings (will likely</u></p>
+<p><u>include non-clinical personnel, only clinical personnel tasks
+below)</u></p>
+<table>
+<colgroup>
+<col style="width: 91%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th>
+<strong>Task</strong>
+</th>
+<th style="text-align: right;">
+<strong>Hours</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Clarify genetic counseling team needs / workflow and agreement with
+GARDE implementation (0.75 hour/week/person)
+</td>
+<td style="text-align: right;">
+<blockquote>
+<p>
+4.5
+</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+Provide insights into workflow for contacting patients / charting
+needs and requirements, provide feedback on running trial. (1 hour /
+week / person)
+</td>
+<td style="text-align: right;">
+<blockquote>
+<p>
+6
+</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+Provide insights into primary care teams’ and patients’ needs,
+current staff workflow, provide guidance for how to notify primary care
+team. (0.5 hour/week/person)
+</td>
+<td style="text-align: right;">
+<blockquote>
+<p>
+6
+</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+Develop and revise chatbot messages for all GARDE sub-populations (1
+hour/week/person)
+</td>
+<td style="text-align: right;">
+<blockquote>
+<p>
+6
+</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<strong>TOTAL</strong>
+</td>
+<td style="text-align: right;">
+<strong>22.5</strong>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="2">
+<li id="fn2"><p>Bradshaw RL, Kawamoto K, Kaphingst KA, et al. GARDE: a
+standards-based clinical decision support platform for identifying
+population health management cohorts. <em>J Am Med Inform Assoc</em>.
+2022;29(5):928-936. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/35224632/">35224632</a>; PMCID:
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9006693/">PMC9006693</a>.<a href="garde-implementation.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="what-is-garde.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
