@@ -43,7 +43,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 
 [Guilherme Del Fiol]: https://medicine.utah.edu/faculty/mddetail/u0420797
 [Richard Bradshaw]: https://scholar.google.com/citations?user=0lAuthAAAAAJ&hl=en
-[Anne Madeo]: https://scholar.google.com/
+[Anne Madeo]: https://www.ncbi.nlm.nih.gov/myncbi/anne.madeo.2/bibliography/public/
 [Jiantao Bian]: https://scholar.google.com/citations?user=FliJ45sAAAAJ&hl=en
 [John Muschelli]: https://johnmuschelli.com/
 [Candace Savonen]: https://www.cansavvy.com/
