@@ -16,7 +16,7 @@ GARDE has two components:
 health record (EHR) to identify patients who meet criteria for health services (Figure 1); and
 
 <figure>
-  <img alt="GARDE architecture" style="border-width:0" src="resources/images/GARDE_workflow.png" />
+  <img alt="GARDE workflow" style="border-width:0" src="resources/images/GARDE_workflow.png" />
   <figcaption><p>Figure 1. GARDE workflow.</p></figcaption>
   </figure>
   
