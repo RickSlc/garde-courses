@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 What is GARDE? | GARDE</title>
+  <title>Chapter 1 What is GARDE? | GARDE</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 What is GARDE? | GARDE" />
+  <meta property="og:title" content="Chapter 1 What is GARDE? | GARDE" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 What is GARDE? | GARDE" />
+  <meta name="twitter:title" content="Chapter 1 What is GARDE? | GARDE" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="chapter-1-what-is-garde.html"/>
-<link rel="next" href="garde-implementation.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="what-is-garde-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -75,8 +75,8 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About GARDE</a></li>
-<li class="chapter" data-level="1" data-path="chapter-1-what-is-garde.html"><a href="chapter-1-what-is-garde.html"><i class="fa fa-check"></i><b>1</b> Chapter 1 What is GARDE?</a></li>
-<li class="chapter" data-level="2" data-path="what-is-garde.html"><a href="what-is-garde.html"><i class="fa fa-check"></i><b>2</b> What is GARDE?</a></li>
+<li class="chapter" data-level="1" data-path="what-is-garde.html"><a href="what-is-garde.html"><i class="fa fa-check"></i><b>1</b> What is GARDE?</a></li>
+<li class="chapter" data-level="2" data-path="what-is-garde-1.html"><a href="what-is-garde-1.html"><i class="fa fa-check"></i><b>2</b> What is GARDE?</a></li>
 <li class="chapter" data-level="3" data-path="garde-implementation.html"><a href="garde-implementation.html"><i class="fa fa-check"></i><b>3</b> GARDE Implementation</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="garde-implementation.html"><a href="garde-implementation.html#governance-review-and-approval"><i class="fa fa-check"></i><b>3.1</b> Governance Review and Approval</a>
@@ -132,21 +132,18 @@
 <div class="hero-image-container">
   <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
 </div>
-<div id="what-is-garde" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> What is GARDE?<a href="what-is-garde.html#what-is-garde" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>GARDE is an open-source software platform, funded by several grants from
-the National Cancer Institute, that enables population-level risk
-assessment and genetic testing for conditions (e.g., cancer, familial
-hypercholesterolemia) for which there are guidelines that support
-genetic testing.
-GARDE has two main components:</p>
+<div id="what-is-garde" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> What is GARDE?<a href="what-is-garde.html#what-is-garde" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>GARDE is an open-source digital health software platform, funded by several grants from
+the National Cancer Institute. GARDE enables population-level risk
+assessment for health conditions with chatbot-based outreach and education.</p>
+<p>GARDE has two components:</p>
 <ol style="list-style-type: decimal">
 <li><strong>population-level risk assessment algorithms</strong> that analyze patient data in the electronic
-health record (EHR) to identify patients who meet criteria for genetic
-testing (Figure 1); and</li>
+health record (EHR) to identify patients who meet criteria for health services (Figure 1); and</li>
 </ol>
 <figure>
-<img alt="GARDE architecture" style="border-width:0" src="resources/images/GARDE_workflow.png" />
+<img alt="GARDE workflow" style="border-width:0" src="resources/images/GARDE_workflow.png" />
 <figcaption>
 <p>
 Figure 1. GARDE workflow.
@@ -154,7 +151,7 @@ Figure 1. GARDE workflow.
 </figcaption>
 </figure>
 <ol start="2" style="list-style-type: decimal">
-<li>an automated <strong>chatbot</strong> for patient outreach, pretest
+<li>a <strong>chatbot</strong> authoring platform (GARDE-Chat) that allows researchers and their teams to create healthcare chatbots for patient outreach, pretest
 education, and access to genetic testing (Figure 2).</li>
 </ol>
 <figure>
@@ -165,8 +162,8 @@ Figure 2. Chatbot example.
 </p>
 </figcaption>
 </figure>
-<p>GARDE uses an open architecture, external to the EHR, and is integrated with the EHR
-through standards-based Web services.</p>
+<p>GARDE algorithms and GARDE-Chat chatbots are EHR and healthcare system-agnostic. They can be used in various clinical settings. GARDE algorithms have been deployed across 6 academic medical centers. Over 20 studies using GARDE-Chat across various clinical domains and settings, from pilot trials to large pragmatic clinical trials [insert link to GARDE-chat article?]. GARDE algorithms and GARDE-Chat chatbots can be shared and adapted across research projects and institutions. GARDE algorithms and GARDE-Chat chatbots can be used independently or in combination depending on the study design and implementation approach.</p>
+
 </div>
 <hr>
 <center> 
@@ -181,8 +178,8 @@ through standards-based Web services.</p>
           </div>
         </div>
       </div>
-<a href="chapter-1-what-is-garde.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="garde-implementation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="what-is-garde-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

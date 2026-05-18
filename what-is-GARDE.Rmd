@@ -1,9 +1,8 @@
 ```{r, include = FALSE}
-## ottrpal::set_knitr_image_path()
 ```
 
 
-# Chapter 1 What is GARDE?
+# What is GARDE?
 
 GARDE is an open-source digital health software platform, funded by several grants from
 the National Cancer Institute. GARDE enables population-level risk

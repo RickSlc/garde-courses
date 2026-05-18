@@ -1,5 +1,5 @@
-chapter-1-what-is-garde
 what-is-garde
+what-is-garde-1
 garde-implementation
 governance-review-and-approval
 additional-information
