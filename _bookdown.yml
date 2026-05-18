@@ -3,12 +3,12 @@ chapter_name: "Chapter "
 repo: https://github.com/RickSlc/garde-courses/
 #repo: https://github.com/jhudsl/ottrpal_Template/
 rmd_files: ["index.Rmd",
+            "what-is-GARDE.Rmd",
             "GARDE_implementation.Rmd",
 #            "01-GARDE-architectural-overview.Rmd",
 #            "02-GARDE-user-guide.Rmd",
 #            "References.Rmd",
-            "About.Rmd",
-            "what-is-GARDE.Rmd"]
+            "About.Rmd"]
 new_session: yes
 delete_merged_file: true
 language:
