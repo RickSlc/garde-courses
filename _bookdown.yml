@@ -8,8 +8,8 @@ rmd_files: ["index.Rmd",
 #            "01-GARDE-architectural-overview.Rmd",
 #            "02-GARDE-user-guide.Rmd",
 #            "References.Rmd",
-            "What-is-GARDE-chat.Rmd",
-            "About.Rmd"]
+             "GARDE-chat.Rmd",
+             "About.Rmd"]
 new_session: yes
 delete_merged_file: true
 language:
