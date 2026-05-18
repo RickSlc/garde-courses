@@ -1,0 +1,32 @@
+```{r, include = FALSE}
+## ottrpal::set_knitr_image_path()
+```
+
+
+# Chapter 1 What is GARDE?
+
+GARDE is an open-source digitl health software platform, funded by several grants from
+the National Cancer Institute. GARDE enables population-level risk
+assessment and services for health conditions.
+
+GARDE has two components:
+  
+  1.   **population-level risk assessment algorithms** that analyze patient data in the electronic
+health record (EHR) to identify patients who meet criteria for health services (Figure 1); and
+
+<figure>
+  <img alt="GARDE workflow" style="border-width:0" src="resources/images/GARDE_workflow.png" />
+  <figcaption><p>Figure 1. GARDE workflow.</p></figcaption>
+  </figure>
+  
+  2.   a **chatbot** authoring platform (GARDE-Chat) that allows researchers and their teams to create healthcare chatbots for patient outreach, pretest
+education, and access to genetic testing (Figure 2).
+
+<figure>
+  <img alt="GARDE architecture" style="border-width:0" src="resources/images/Chatbot_example.png" />
+  <figcaption><p>Figure 2. Chatbot example.</p></figcaption>
+  </figure>
+  
+  GARDE algorithms and GARDE-Chat chatbots are EHR and healthcare system-agnostic. They can be used in various clinical settings. GARDE algorithms have been deployed across 6 academic medical centers. Over 20 studies using GARDE-Chat across various clinical domains and settings, from pilot trials to large pragmatic clinical trials [insert link to GARDE-chat article?]. GARDE algorithms and GARDE-Chat chatbots can be shared and adapted across research projects and institutions. GARDE algorithms and GARDE-Chat chatbots can be used independently or in combination depending on the study design and implementation approach.
+
+
