@@ -5,9 +5,9 @@
 
 # Chapter 1 What is GARDE?
 
-GARDE is an open-source digitl health software platform, funded by several grants from
+GARDE is an open-source digital health software platform, funded by several grants from
 the National Cancer Institute. GARDE enables population-level risk
-assessment and services for health conditions.
+assessment for health conditions with chatbot-based outreach and education.
 
 GARDE has two components:
   
