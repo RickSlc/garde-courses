@@ -24,6 +24,6 @@ education, and access to genetic testing (Figure 2).
   <figcaption><p>Figure 2. Chatbot example.</p></figcaption>
   </figure>
   
-  GARDE algorithms and GARDE-Chat chatbots are EHR and healthcare system-agnostic. They can be used in various clinical settings. GARDE algorithms have been deployed across 6 academic medical centers. Over 20 studies using GARDE-Chat across various clinical domains and settings, from pilot trials to large pragmatic clinical trials [insert link to GARDE-chat article?]. GARDE algorithms and GARDE-Chat chatbots can be shared and adapted across research projects and institutions. GARDE algorithms and GARDE-Chat chatbots can be used independently or in combination depending on the study design and implementation approach.
+  GARDE algorithms and GARDE-Chat chatbots are EHR and healthcare system-agnostic. They can be used in various clinical settings. GARDE algorithms have been deployed across 6 academic medical centers. Over 20 studies use GARDE-Chat across various clinical domains and settings, from pilot trials to large pragmatic clinical trials [https://pmc.ncbi.nlm.nih.gov/articles/PMC12798686/]. GARDE algorithms and GARDE-Chat chatbots can be shared and adapted across research projects and institutions. GARDE algorithms and GARDE-Chat chatbots can be used independently or in combination depending on the study design and implementation approach.
 
 
