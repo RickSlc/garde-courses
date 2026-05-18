@@ -7,8 +7,7 @@
 
 GARDE is an open-source digitl health software platform, funded by several grants from
 the National Cancer Institute. GARDE enables population-level risk
-assessment and genetic testing for conditions (e.g., cancer, familial hypercholesterolemia) for which there are guidelines that support
-genetic testing.
+assessment and services for health conditions.
 
 GARDE has two components:
   

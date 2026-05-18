@@ -8,6 +8,7 @@ rmd_files: ["index.Rmd",
 #            "02-GARDE-user-guide.Rmd",
 #            "References.Rmd",
             "About.Rmd",
+            "what-is-GARDE.Rmd"
             ]
 new_session: yes
 delete_merged_file: true
