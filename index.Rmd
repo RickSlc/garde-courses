@@ -38,7 +38,7 @@ of the GARDE architecture, is HIPAA compliant for handling PHI.
 3.  GARDE has successfully undergone security review and approval at 6
 academic medical centers across the US.
 
-## Previous GARDE implementation
+**Previous GARDE implementation**
 
 GARDE supported the Broadening the Reach, Impact, and Delivery of
 Genetic Services (BRIDGE) randomized controlled trial, which compared
