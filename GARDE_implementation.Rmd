@@ -1,37 +1,6 @@
 ```{r, include = FALSE}
-## ottrpal::set_knitr_image_path()
+
 ```
-
-# What is GARDE?
-
-GARDE is an open-source software platform, funded by several grants from
-the National Cancer Institute, that enables population-level risk
-assessment and genetic testing for conditions (e.g., cancer, familial
-hypercholesterolemia) for which there are guidelines that support
-genetic testing.
-GARDE has two main components:
-
-1.   **population-level risk assessment algorithms** that analyze patient data in the electronic
-health record (EHR) to identify patients who meet criteria for genetic
-testing (Figure 1); and
-
-<figure>
-<img alt="GARDE architecture" style="border-width:0" src="resources/images/GARDE_workflow.png" />
-<figcaption><p>Figure 1. GARDE workflow.</p></figcaption>
-</figure>
-
-2.   an automated **chatbot** for patient outreach, pretest
-education, and access to genetic testing (Figure 2).
-
-<figure>
-<img alt="GARDE architecture" style="border-width:0" src="resources/images/Chatbot_example.png" />
-<figcaption><p>Figure 2. Chatbot example.</p></figcaption>
-</figure>
-
-GARDE uses an open architecture, external to the EHR, and is integrated with the EHR
-through standards-based Web services.
-
-
 # GARDE Implementation
 
 ## Governance Review and Approval
