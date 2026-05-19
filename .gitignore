@@ -1,16 +1,4 @@
-# ignore nonsense files
-.DS_Store
-.Rhistory
-.local
-.rstudio
-.bash_history
-.RData
-.httr-oauth
-docker/git_token.txt
 .Rproj.user
-docs/*
-/.idea/*
-/word-docs/*
-
-# ignore R data serialization files
-*.rds
+.Rhistory
+.RData
+.DS_Store

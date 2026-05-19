@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Previous GARDE implementation | GARDE</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Previous GARDE implementation | GARDE" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Previous GARDE implementation | GARDE" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="index.html"/>
+<link rel="next" href="what-is-garde.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://reimagineehr.utah.edu/innovations/garde/"><img src="resources/images/garde-cyan.svg" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About GARDE</a></li>
+<li class="chapter" data-level="1" data-path="previous-garde-implementation.html"><a href="previous-garde-implementation.html"><i class="fa fa-check"></i><b>1</b> Previous GARDE implementation</a></li>
+<li class="chapter" data-level="2" data-path="what-is-garde.html"><a href="what-is-garde.html"><i class="fa fa-check"></i><b>2</b> What is GARDE?</a></li>
+<li class="chapter" data-level="3" data-path="garde-implementation.html"><a href="garde-implementation.html"><i class="fa fa-check"></i><b>3</b> GARDE Implementation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="garde-implementation.html"><a href="garde-implementation.html#governance-review-and-approval"><i class="fa fa-check"></i><b>3.1</b> Governance Review and Approval</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="garde-implementation.html"><a href="garde-implementation.html#additional-information"><i class="fa fa-check"></i><b>3.1.1</b> Additional information</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="garde-implementation.html"><a href="garde-implementation.html#what-can-facilitate-governance-review"><i class="fa fa-check"></i><b>3.2</b> What can facilitate governance review?</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="garde-implementation.html"><a href="garde-implementation.html#identify-key-stakeholders-and-champions-for-your-project"><i class="fa fa-check"></i><b>3.2.1</b> Identify key stakeholders and champions for your project</a></li>
+<li class="chapter" data-level="3.2.2" data-path="garde-implementation.html"><a href="garde-implementation.html#garde-architecture"><i class="fa fa-check"></i><b>3.2.2</b> GARDE Architecture</a></li>
+<li class="chapter" data-level="3.2.3" data-path="garde-implementation.html"><a href="garde-implementation.html#deployment-requirements"><i class="fa fa-check"></i><b>3.2.3</b> Deployment Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="garde-implementation.html"><a href="garde-implementation.html#it-human-resources"><i class="fa fa-check"></i><b>3.3</b> IT Human Resources</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="garde-implementation.html"><a href="garde-implementation.html#planning"><i class="fa fa-check"></i><b>3.3.1</b> Planning</a></li>
+<li class="chapter" data-level="3.3.2" data-path="garde-implementation.html"><a href="garde-implementation.html#deployment"><i class="fa fa-check"></i><b>3.3.2</b> Deployment</a></li>
+<li class="chapter" data-level="3.3.3" data-path="garde-implementation.html"><a href="garde-implementation.html#epic-integration"><i class="fa fa-check"></i><b>3.3.3</b> Epic Integration</a></li>
+<li class="chapter" data-level="3.3.4" data-path="garde-implementation.html"><a href="garde-implementation.html#chatbot-integration-and-deployment"><i class="fa fa-check"></i><b>3.3.4</b> Chatbot integration and deployment</a></li>
+<li class="chapter" data-level="3.3.5" data-path="garde-implementation.html"><a href="garde-implementation.html#operations-maintenance"><i class="fa fa-check"></i><b>3.3.5</b> Operations &amp; Maintenance</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="garde-implementation.html"><a href="garde-implementation.html#clinical-human-resources"><i class="fa fa-check"></i><b>3.4</b> Clinical Human Resources</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="garde-implementation.html"><a href="garde-implementation.html#planning-1"><i class="fa fa-check"></i><b>3.4.1</b> Planning</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GARDE</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+
+
+
+<div class="hero-image-container">
+  <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
+</div>
+<div id="previous-garde-implementation" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Previous GARDE implementation<a href="previous-garde-implementation.html#previous-garde-implementation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>GARDE supported the Broadening the Reach, Impact, and Delivery of
+Genetic Services (BRIDGE) randomized controlled trial, which compared
+the effectiveness of chatbot-based delivery of cancer genetic services
+compared to standard care (SOC) among 3073 unaffected primary care
+patients in two large healthcare systems.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The study found that
+chatbots are equivalent to SOC in terms of uptake of pretest cancer
+genetic services and genetic testing. BRIDGE results suggest that
+chatbots offer a scalable and secure way to deliver genetic services,
+allowing genetic counselors to focus on more specialized care.</p>
+<!--
+## Available course formats
+
+This course is available in multiple formats which allows you to take it in the way that best suites your needs. You can take it for certificate which can be for free or fee.
+
+- The material for this course can be viewed without login requirement on this [Bookdown website](LINK HERE). This format might be most appropriate for you if you rely on screen-reader technology.
+- This course can be taken for [free certification through Leanpub](LINK HERE).
+- This course can be taken on [Coursera for certification here](LINK HERE) (but it is not available for free on Coursera).
+- Our courses are open source, you can find the [source material for this course on GitHub](LINK HERE).
+
+-->
+
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Kaphingst KA, Kohlmann WK, Lorenz Chambers R, et al. Uptake of
+Cancer Genetic Services for Chatbot vs Standard-of-Care Delivery
+Models: The BRIDGE Randomized Clinical Trial. <em>JAMA Netw Open</em>. 2024
+Sep 3;7(9):e2432143. doi: 10.1001/jamanetworkopen.2024.32143. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/39250153/">39250153</a>; PMCID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/39250153/">PMC11385050</a>.<a href="previous-garde-implementation.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="what-is-garde.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
