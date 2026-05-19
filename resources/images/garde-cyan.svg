@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+     viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F1F2F2;}
 	.st1{fill:url(#SVGID_1_);}
@@ -20,7 +20,7 @@
 	.st14{letter-spacing:2;}
 	.st15{fill:none;stroke:#7EDDD3;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<g id="Layer_2">
+	<g id="Layer_2">
 	<rect class="st0" width="300" height="300"/>
 	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="11.394" y1="266.106" x2="288.606" y2="-11.106">
 		<stop  offset="0.3" style="stop-color:#4F868E"/>
@@ -67,8 +67,13 @@
 			C234.91,276.66,233.62,279.08,230.2,279.16z M225.56,277.69h4.18c2.6,0,3.58-1.59,3.58-3.56c0-1.97-1.06-3.56-3.17-3.56h-4.59
 			V277.69z"/>
 	</g>
-	<rect x="30.29" y="53.13" class="st9" width="256.87" height="142.39"/>
-	<text transform="matrix(1 0 0 1 30.2896 76.1993)"><tspan x="0" y="0" class="st10 st11 st12">Genetic Cancer </tspan><tspan x="0" y="40" class="st10 st11 st12">Risk Detector</tspan><tspan x="0" y="100" class="st10 st11 st13 st14">GARDE</tspan></text>
+	<rect x="30.29" y="53.13"
+		  class="st9"
+		  width="256.87"
+		  height="142.39"/>
+	<text transform="matrix(1 0 0 1 30.2896 76.1993)">
+		<tspan x="0" y="60" class="st10 st11 st13 st14">GARDE</tspan>
+	</text>
 	<line class="st15" x1="35.29" y1="206.09" x2="101.66" y2="206.09"/>
 </g>
 </svg>

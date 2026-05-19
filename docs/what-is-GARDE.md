@@ -1,9 +1,9 @@
 
-# What is GARDE?
+# What is GARDE? {#what-is-garde}
 
 GARDE is an open-source digital health software platform, funded by several grants from
 the National Cancer Institute. GARDE enables population-level risk
-assessment for health conditions with chatbot-based outreach and education.
+assessment for health conditions that can be combined with chatbot-based outreach and education.
 
 GARDE has two components:
   
@@ -15,8 +15,8 @@ health record (EHR) to identify patients who meet criteria for health services (
   <figcaption><p>Figure 1. GARDE workflow.</p></figcaption>
   </figure>
   
-  2.   a **chatbot** authoring platform (GARDE-Chat) that allows researchers and their teams to create healthcare chatbots for patient outreach, pretest
-education, and access to genetic testing (Figure 2).
+  2.   a **chatbot** authoring platform ([GARDE-Chat](https://garde.utah.edu/what-is-garde-chat.html)) that allows researchers and their teams to create healthcare chatbots for patient outreach, 
+education, and access to appropriate health services (Figure 2).
 
 <figure>
   <img alt="GARDE architecture" style="border-width:0" src="resources/images/Chatbot_example.png" />

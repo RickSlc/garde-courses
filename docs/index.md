@@ -15,9 +15,9 @@ output:
 
 # About GARDE {-}
 
-This site has been created to provide researchers and genetic counselors with
+This site has been created to provide researchers with
 instruction about GARDE, a population health management application that identifies 
-individuals who meet criteria for genetic testing. 
+individuals who meet criteria for a variety of health services. 
 
 GARDE's architecture is described to facilitate communication and requirements 
 for installation and deployment, and user-level instructions are provided to 
