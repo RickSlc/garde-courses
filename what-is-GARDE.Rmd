@@ -1,6 +1,6 @@
 ```{r, include = FALSE}
 ```
-# What is GARDE?
+# What is GARDE? {#what-is-garde}
 
 GARDE is an open-source digital health software platform, funded by several grants from
 the National Cancer Institute. GARDE enables population-level risk
