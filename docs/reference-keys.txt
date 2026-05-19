@@ -1,5 +1,4 @@
 what-is-garde
-what-is-garde-1
 garde-implementation
 governance-review-and-approval
 additional-information
@@ -15,3 +14,8 @@ chatbot-integration-and-deployment
 operations-maintenance
 clinical-human-resources
 planning-1
+what-is-garde-chat
+what-problem-does-garde-chat-solve
+how-does-garde-chat-ensure-that-chatbots-are-accurate-and-have-safety-guardrails
+my-institution-is-very-concerned-with-privacy.-how-can-garde-chat-address-this-concern
+is-garde-chat-secure

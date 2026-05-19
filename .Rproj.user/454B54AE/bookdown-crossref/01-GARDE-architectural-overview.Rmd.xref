@@ -1,0 +1,14 @@
+h1:architecture-overview Architecture Overview
+h2:target-audience Target Audience
+h2:introduction-to-garde Introduction to GARDE
+h3:garde-standards-based-advanced-cds GARDE – Standards-Based Advanced CDS
+h4:garde-rules GARDE Rules
+h3:population-management Population Management
+h4:population-health-management-tools Population Health Management Tools
+h3:bulk-outreach Bulk Outreach
+h3:garde-integration-with-clinical-practice GARDE Integration with Clinical Practice
+h2:architectural-components Architectural Components
+h2:installation-requirements Installation Requirements
+h3:deployment-requirements Deployment Requirements
+h3:software-installationbuild Software Installation/Build
+
