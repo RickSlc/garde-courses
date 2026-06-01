@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 GARDE-Chat Allows You to Build Research-Ready Health Chatbots Without Programming Skills | GARDE</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 GARDE-Chat Allows You to Build Research-Ready Health Chatbots Without Programming Skills | GARDE" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 GARDE-Chat Allows You to Build Research-Ready Health Chatbots Without Programming Skills | GARDE" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="what-is-garde-chat.html"/>
+<link rel="next" href="about-the-authors.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://reimagineehr.utah.edu/innovations/garde/"><img src="resources/images/garde-cyan.svg" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About GARDE</a></li>
+<li class="chapter" data-level="1" data-path="what-is-garde.html"><a href="what-is-garde.html"><i class="fa fa-check"></i><b>1</b> What is GARDE?</a></li>
+<li class="chapter" data-level="2" data-path="garde-implementation.html"><a href="garde-implementation.html"><i class="fa fa-check"></i><b>2</b> GARDE Implementation</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="garde-implementation.html"><a href="garde-implementation.html#governance-review-and-approval"><i class="fa fa-check"></i><b>2.1</b> Governance Review and Approval</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="garde-implementation.html"><a href="garde-implementation.html#additional-information"><i class="fa fa-check"></i><b>2.1.1</b> Additional information</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="garde-implementation.html"><a href="garde-implementation.html#what-can-facilitate-governance-review"><i class="fa fa-check"></i><b>2.2</b> What can facilitate governance review?</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="garde-implementation.html"><a href="garde-implementation.html#identify-key-stakeholders-and-champions-for-your-project"><i class="fa fa-check"></i><b>2.2.1</b> Identify key stakeholders and champions for your project</a></li>
+<li class="chapter" data-level="2.2.2" data-path="garde-implementation.html"><a href="garde-implementation.html#garde-architecture"><i class="fa fa-check"></i><b>2.2.2</b> GARDE Architecture</a></li>
+<li class="chapter" data-level="2.2.3" data-path="garde-implementation.html"><a href="garde-implementation.html#deployment-requirements"><i class="fa fa-check"></i><b>2.2.3</b> Deployment Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="garde-implementation.html"><a href="garde-implementation.html#it-human-resources"><i class="fa fa-check"></i><b>2.3</b> IT Human Resources</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="garde-implementation.html"><a href="garde-implementation.html#planning"><i class="fa fa-check"></i><b>2.3.1</b> Planning</a></li>
+<li class="chapter" data-level="2.3.2" data-path="garde-implementation.html"><a href="garde-implementation.html#deployment"><i class="fa fa-check"></i><b>2.3.2</b> Deployment</a></li>
+<li class="chapter" data-level="2.3.3" data-path="garde-implementation.html"><a href="garde-implementation.html#epic-integration"><i class="fa fa-check"></i><b>2.3.3</b> Epic Integration</a></li>
+<li class="chapter" data-level="2.3.4" data-path="garde-implementation.html"><a href="garde-implementation.html#chatbot-integration-and-deployment"><i class="fa fa-check"></i><b>2.3.4</b> Chatbot integration and deployment</a></li>
+<li class="chapter" data-level="2.3.5" data-path="garde-implementation.html"><a href="garde-implementation.html#operations-maintenance"><i class="fa fa-check"></i><b>2.3.5</b> Operations &amp; Maintenance</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="garde-implementation.html"><a href="garde-implementation.html#clinical-human-resources"><i class="fa fa-check"></i><b>2.4</b> Clinical Human Resources</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="garde-implementation.html"><a href="garde-implementation.html#planning-1"><i class="fa fa-check"></i><b>2.4.1</b> Planning</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="what-is-garde-chat.html"><a href="what-is-garde-chat.html"><i class="fa fa-check"></i><b>3</b> What is GARDE-Chat?</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="what-is-garde-chat.html"><a href="what-is-garde-chat.html#what-problem-does-garde-chat-solve"><i class="fa fa-check"></i><b>3.1</b> What problem does GARDE-Chat solve?</a></li>
+<li class="chapter" data-level="3.2" data-path="what-is-garde-chat.html"><a href="what-is-garde-chat.html#how-does-garde-chat-ensure-that-chatbots-are-accurate-and-have-safety-guardrails"><i class="fa fa-check"></i><b>3.2</b> How does GARDE-Chat ensure that chatbots are accurate and have safety guardrails?</a></li>
+<li class="chapter" data-level="3.3" data-path="what-is-garde-chat.html"><a href="what-is-garde-chat.html#my-institution-is-very-concerned-with-privacy.-how-can-garde-chat-address-this-concern"><i class="fa fa-check"></i><b>3.3</b> My institution is very concerned with privacy. How can GARDE-Chat address this concern?</a></li>
+<li class="chapter" data-level="3.4" data-path="what-is-garde-chat.html"><a href="what-is-garde-chat.html#is-garde-chat-secure"><i class="fa fa-check"></i><b>3.4</b> Is GARDE-Chat secure?</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><i class="fa fa-check"></i><b>4</b> GARDE-Chat Allows You to Build Research-Ready Health Chatbots Without Programming Skills</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#garde-chat-use-cases"><i class="fa fa-check"></i><b>4.1</b> GARDE-Chat use cases:</a></li>
+<li class="chapter" data-level="4.2" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#advantages-of-garde-chat"><i class="fa fa-check"></i><b>4.2</b> Advantages of GARDE-Chat</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#no-code-chatbot-development"><i class="fa fa-check"></i><b>4.2.1</b> No-Code Chatbot Development</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#flexible-approaches"><i class="fa fa-check"></i><b>4.3</b> Flexible Approaches</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#garde-chat-supports"><i class="fa fa-check"></i><b>4.3.1</b> GARDE-Chat supports:</a></li>
+<li class="chapter" data-level="4.3.2" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#designed-for-research-and-clinical-studies"><i class="fa fa-check"></i><b>4.3.2</b> Designed for Research and Clinical Studies</a></li>
+<li class="chapter" data-level="4.3.3" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#accuracy-safety-and-guardrails"><i class="fa fa-check"></i><b>4.3.3</b> Accuracy, Safety, and Guardrails</a></li>
+<li class="chapter" data-level="4.3.4" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#scripted-and-hybrid-workflows"><i class="fa fa-check"></i><b>4.3.4</b> Scripted and Hybrid Workflows</a></li>
+<li class="chapter" data-level="4.3.5" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#monitoring-and-oversight"><i class="fa fa-check"></i><b>4.3.5</b> Monitoring and Oversight</a></li>
+<li class="chapter" data-level="4.3.6" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#privacy-and-data-protection"><i class="fa fa-check"></i><b>4.3.6</b> Privacy and Data Protection</a></li>
+<li class="chapter" data-level="4.3.7" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#support-for-self-hosted-open-source-models"><i class="fa fa-check"></i><b>4.3.7</b> Support for Self-Hosted Open-Source Models</a></li>
+<li class="chapter" data-level="4.3.8" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#compatibility-with-enterprise-llm-environments"><i class="fa fa-check"></i><b>4.3.8</b> Compatibility with Enterprise LLM Environments</a></li>
+<li class="chapter" data-level="4.3.9" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#security-and-real-world-use"><i class="fa fa-check"></i><b>4.3.9</b> Security and Real-World Use</a></li>
+<li class="chapter" data-level="4.3.10" data-path="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html"><a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#open-source-and-available-to-researchers"><i class="fa fa-check"></i><b>4.3.10</b> Open Source and Available to Researchers</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GARDE</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+
+
+
+<div class="hero-image-container">
+  <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
+</div>
+<div id="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> GARDE-Chat Allows You to Build Research-Ready Health Chatbots Without Programming Skills<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>GARDE-Chat is an open-source platform for creating fully scripted, AI-enabled, and hybrid chatbots for healthcare and clinical research. Designed for researchers, clinicians, and healthcare organizations, GARDE-Chat makes it possible to build and deploy conversational experiences through a visual drag-and-drop interface — without requiring advanced programming skills.</p>
+<div id="garde-chat-use-cases" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> GARDE-Chat use cases:<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#garde-chat-use-cases" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>• Health education
+• Patient engagement
+• Clinical research recruitment and retention
+• Symptom monitoring and follow-up
+• Access to healthcare services
+• Behavioral and lifestyle interventions</p>
+<p>Chatbots created with GARDE-Chat can be delivered through web browsers or SMS/text messaging.</p>
+</div>
+<div id="advantages-of-garde-chat" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Advantages of GARDE-Chat<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#advantages-of-garde-chat" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="no-code-chatbot-development" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> No-Code Chatbot Development<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#no-code-chatbot-development" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE-Chat allows non-programmers to design chatbot workflows using a visual interface instead of custom code. Researchers and institutions can collaborate by sharing chatbot designs and adapting them across studies and populations.</p>
+</div>
+</div>
+<div id="flexible-approaches" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Flexible Approaches<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#flexible-approaches" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="garde-chat-supports" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> GARDE-Chat supports:<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#garde-chat-supports" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>• Scripted chatbots with predefined conversation flows
+• LLM-enabled chatbots powered by large language models
+• Hybrid chatbots that combine scripted content with AI-generated responses
+This flexibility allows teams to balance consistency, scalability, and conversational flexibility based on the needs of a project.</p>
+</div>
+<div id="designed-for-research-and-clinical-studies" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Designed for Research and Clinical Studies<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#designed-for-research-and-clinical-studies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE-Chat supports a wide range of study designs, from pilot studies to large pragmatic clinical trials. The platform includes:
+• Detailed audit logs of chatbot-user interactions
+• Integration with external systems and data sources
+• Support for longitudinal and multi-step interventions</p>
+<p>GARDE-Chat can integrate with varied systems, including:
+• Electronic health records (EHRs)
+• REDCap
+• Other research and clinical data systems</p>
+</div>
+<div id="accuracy-safety-and-guardrails" class="section level3 hasAnchor" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Accuracy, Safety, and Guardrails<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#accuracy-safety-and-guardrails" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Healthcare organizations and researchers often have concerns about AI-generated misinformation, hallucinations, and unintended medical advice. GARDE-Chat includes the followingg approaches, which support safer and more controlled chatbot experiences.</p>
+</div>
+<div id="scripted-and-hybrid-workflows" class="section level3 hasAnchor" number="4.3.4">
+<h3><span class="header-section-number">4.3.4</span> Scripted and Hybrid Workflows<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#scripted-and-hybrid-workflows" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Teams can create fully scripted chatbots with fixed questions and responses, reducing variability and helping ensure consistency and accuracy.</p>
+<p>Hybrid chatbot designs allow organizations to keep core educational or clinical content fully scripted while limiting where AI-generated responses are used.</p>
+<div id="controlled-access-to-llms" class="section level4 hasAnchor" number="4.3.4.1">
+<h4><span class="header-section-number">4.3.4.1</span> Controlled Access to LLMs<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#controlled-access-to-llms" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>When large language models are used, participants interact with the chatbot through the GARDE-Chat interface rather than directly with the model itself. Researchers can configure prompts, workflows, and constraints to help guide chatbot behavior.</p>
+</div>
+<div id="retrieval-augmented-generation-rag" class="section level4 hasAnchor" number="4.3.4.2">
+<h4><span class="header-section-number">4.3.4.2</span> Retrieval-Augmented Generation (RAG)<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#retrieval-augmented-generation-rag" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>RAG can help ground responses in approved source material and reduce the likelihood of inaccurate or fabricated answers.</p>
+</div>
+</div>
+<div id="monitoring-and-oversight" class="section level3 hasAnchor" number="4.3.5">
+<h3><span class="header-section-number">4.3.5</span> Monitoring and Oversight<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#monitoring-and-oversight" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE-Chat includes dashboards and audit logs that allow research teams to review chatbot interactions and monitor chatbot performance over time.</p>
+</div>
+<div id="privacy-and-data-protection" class="section level3 hasAnchor" number="4.3.6">
+<h3><span class="header-section-number">4.3.6</span> Privacy and Data Protection<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#privacy-and-data-protection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE-Chat was designed with healthcare and research privacy requirements in mind.</p>
+<div id="on-premise-deployment-options" class="section level4 hasAnchor" number="4.3.6.1">
+<h4><span class="header-section-number">4.3.6.1</span> On-Premise Deployment Options<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#on-premise-deployment-options" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Scripted chatbots can be deployed on HIPAA-compliant institutional infrastructure, allowing participant data to remain within the organization’s environment.</p>
+</div>
+</div>
+<div id="support-for-self-hosted-open-source-models" class="section level3 hasAnchor" number="4.3.7">
+<h3><span class="header-section-number">4.3.7</span> Support for Self-Hosted Open-Source Models<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#support-for-self-hosted-open-source-models" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE-Chat can integrate with open-source large language models that are deployed within an institution’s own secure infrastructure.</p>
+</div>
+<div id="compatibility-with-enterprise-llm-environments" class="section level3 hasAnchor" number="4.3.8">
+<h3><span class="header-section-number">4.3.8</span> Compatibility with Enterprise LLM Environments<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#compatibility-with-enterprise-llm-environments" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Some institutions maintain HIPAA-compliant agreements and environments for commercial LLM providers such as OpenAI or Google. GARDE-Chat can be configured to work within those institutional environments when available.</p>
+<p>Institutional privacy, security, and compliance requirements vary, and organizations should evaluate deployment configurations based on their own policies and regulatory obligations.</p>
+</div>
+<div id="security-and-real-world-use" class="section level3 hasAnchor" number="4.3.9">
+<h3><span class="header-section-number">4.3.9</span> Security and Real-World Use<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#security-and-real-world-use" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE-Chat was developed by [researchers at the University of Utah]((<a href="https://reimagineehr.utah.edu/about/" class="uri">https://reimagineehr.utah.edu/about/</a>) with support from the National Cancer Institute and other funding sources.</p>
+<p>The platform has been used in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12798686/#ocaf211-T1">multiple research studies and pragmatic clinical trials</a>, including studies involving large participant populations.
+GARDE-Chat has also been used in research collaborations involving institutions such as:
+• University of Utah
+• Medical University of South Carolina
+• Wake Forest University School of Medicine
+• Weill Cornell Medicine</p>
+</div>
+<div id="open-source-and-available-to-researchers" class="section level3 hasAnchor" number="4.3.10">
+<h3><span class="header-section-number">4.3.10</span> Open Source and Available to Researchers<a href="garde-chat-allows-you-to-build-research-ready-health-chatbots-without-programming-skills.html#open-source-and-available-to-researchers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE-Chat is available under an open-source license, allowing researchers and institutions to adapt and extend the platform for their own healthcare and research applications.</p>
+<p>For implementation details, publications, or collaboration opportunities, contact the GARDE team (GARDE AT hci.utah.edu)</p>
+
+</div>
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="what-is-garde-chat.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

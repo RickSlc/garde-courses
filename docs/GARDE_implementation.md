@@ -1,7 +1,7 @@
 
 # GARDE Implementation
 
-## Governance Review and Approval
+## Governance Review and Approval{-}
 
 Most healthcare systems (HCS) have a governance committee that reviews
 proposals for implementation of information technology (IT) tools.
@@ -21,7 +21,7 @@ overarching goals of governance reviews are typically to:
 4.  ensure there are robust channels for user feedback and the
     dissemination of systems-related information to end users
 
-### Additional information
+### Additional information{-}
 
 1.  GARDE is highly customizable. Resources necessary for a successful
 implementation will vary depending on implementing HCS factors and
@@ -57,17 +57,17 @@ considering genetic testing referred for genetic counseling?
 will the implementation include both PHM algorithms and
 chatbot?)
 
-2.  In the BRIDGE trial, research eligibility screening and patient
+2.  In the BRIDGE trial[^1] , research eligibility screening and patient
 outreach by a genetic counseling assistant required on average a
 couple of minutes per patient.
 
 
 
-## What can facilitate governance review?
+## What can facilitate governance review?{-}
 
 To help you prepare for governance review within your HCS, following is information that may help you, including a description of [GARDE architecture](#garde-architecture), [GARDE deployment requirements](#deployment-requirements) and an estimate of the [IT](#it-human-resources) and [Clinical](#clinical-human-resources) Human Resources that may facilitate GARDE implementation.
 
-### Identify key stakeholders and champions for your project
+### Identify key stakeholders and champions for your project{-}
 
 We recommend that you consider identifying representatives from the
   following stakeholder groups to support your review.
@@ -88,7 +88,7 @@ We recommend that you consider identifying representatives from the
 
 
 
-### GARDE Architecture
+### GARDE Architecture{-}
 
 Overall, the GARDE architecture contains four components: *OpenCDS*,
 *Population Coordinator*, EHR *Patient Data Repository* (e.g., Epic’s
@@ -113,7 +113,7 @@ perform patient outreach functions.
 Population Health Management.</p></figcaption>
 </figure>
 
-### Deployment Requirements
+### Deployment Requirements{-}
 
 The GARDE components that need to be deployed are the Population
 Coordinator, OpenCDS (Figure 3), and FactDB (not shown). FactDB is a
@@ -133,7 +133,6 @@ Two deployment hosting strategies are supported:
     [Kubernetes](https://kubernetes.io/)). Current cloud-based solutions
     include [AWS](https://aws.amazon.com/) and
     [Azure](https://azure.microsoft.com/en-us).
-
 
 
 Detailed instructions, including the source code, for how to deploy
@@ -160,7 +159,7 @@ into the PHM system. Two options are available, via secure structured
 text file sharing, or via EHR web services APIs. Additional information
 about GARDE’s architecture and deployment are available elsewhere.[^2]
 
-## IT Human Resources
+## IT Human Resources {-}
 
 Based on GARDE implementation in BRIDGE, below is an estimate of the IT
 human resources necessary for its successful implementation over the
@@ -168,7 +167,7 @@ initial 8 months. Some tasks may require \>1 individual. The exact
 number of hours necessary will vary depending on how GARDE is
 implemented.
 
-### Planning
+### Planning {-}
 
 <u>Overall</u>: ~3 months of weekly or biweekly team
 planning/coordination meetings (will likely include non-IT personnel,
@@ -181,7 +180,7 @@ only IT personnel tasks below)
 | **TOTAL** | **60** |
 
 
-### Deployment
+### Deployment {-}
 
 (only one deployment option (virtual machine OR cloud-based) is
 necessary)
@@ -275,7 +274,7 @@ approvals/oversight</td>
 \* Amount of time necessary will depend on HCS ability to support
 GARDE-established cloud deployments (AWS or Azure) and staff experience.
 
-### Epic Integration
+### Epic Integration {-}
 
 <table>
 <colgroup>
@@ -328,14 +327,14 @@ GARDE-established cloud deployments (AWS or Azure) and staff experience.
 </tbody>
 </table>
 
-### Chatbot integration and deployment
+### Chatbot integration and deployment{-}
 
 | **Task** | **Hours** |
 |----|---:|
 | Install GARDE chatbot, ETL chatbot data/ states to SDE, ETL chatbot links to EHR | 40 |
 | **TOTAL** | **40** |
 
-### Operations & Maintenance
+### Operations & Maintenance{-}
 
 | <u>On premise server</u> |  |  | <u>Institution-selected cloud service (e.g. AWS, Azure)</u> |  |
 |----|----|----|----|----|
@@ -347,14 +346,14 @@ GARDE-established cloud deployments (AWS or Azure) and staff experience.
 deployment and amount of trouble-shooting necessary. Cloud-based
 solutions other than AWS or Azure will require more time.
 
-## Clinical Human Resources
+## Clinical Human Resources{-}
 
 Based on GARDE implementation in BRIDGE, below is an estimate of the
 clinical human resources necessary for its successful implementation
 over the initial 3 months. The exact number of hours necessary will vary
 depending on how GARDE is implemented.
 
-### Planning
+### Planning{-}
 
 <u>Overall: ~3 months of weekly or biweekly team planning/coordination
 meetings (will likely</u>
