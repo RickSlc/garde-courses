@@ -38,7 +38,7 @@ GARDE population health algorithms screen patients’ family histories in the el
 </li>
 
 <li style="margin-bottom:22px;">
-GARDE includes a chatbot authoring platform (<a href="https://garde.utah.edu/what-is-garde-chat.html">GARDE-Chat</a>) for patient outreach, education, and access to genetic testing.
+GARDE includes a chatbot authoring platform (<a href="https://garde.utah.edu/what-is-garde-chat.html">GARDE-Chat</a>) for patient outreach, education, and healthcare service facilitation.
 </li>
 
 <li style="margin-bottom:22px;">
@@ -75,7 +75,7 @@ For the vast majority of insured patients, the recommended genetic testing is a 
 GARDE was developed by an experienced biomedical informatics [research team](https://reimagineehr.utah.edu/about/) at University of Utah Health (UHealth) supported by the National Cancer Institute ([NCI, U24CA204800](https://reporter.nih.gov/search/s-tjWctxP0u_iwQv34ifCQ/projects)). NCI supported a successful trial of GARDE at UHealth and New York University Langone Health ([U01CA232826](https://reporter.nih.gov/search/I81ODqGkp0K4ArwneSAX1Q/projects)). With NCI support ([U24CA274582](https://reporter.nih.gov/search/AV4AUvA6Z0Sh_LxXWMpV3A/projects)), GARDE is being implemented at Medical University of South Carolina and Weill Cornell Medicine. Peer-reviewed publications about GARDE can be found [here](https://pubmed.ncbi.nlm.nih.gov/?term=CA204800&sort=date).
 
 ## Can GARDE address other research questions or clinical needs?{-}
-GARDE can be used in both research and clinical settings. Additional use cases can be found [here](file:///Users/acmadeo/University%20of%20Utah%20PHS/Kaphingst%20RA/GARDE/GIT/garde-courses/docs/potential-use-cases.html). 
+GARDE can be used in both research and clinical settings. Additional use cases can be found [here](https://garde.utah.edu/potential-use-cases.html). 
 
 ## How many patients are likely to receive genetic testing through GARDE?{-}
 
@@ -103,6 +103,8 @@ The below figure provides study outcomes of the BRIDGE trial at UofU Health and 
 
 [The GARDE study team](mailto:GARDE@hci.utah.edu) can be emailed directly and can provide you with references from implementing sites.
 
+## How can I download this information?{-}
 
+If you want to download this information, just click [here](resources/pdfs/Primary care line leaders.pdf){target="_blank"} for a pdf!
 
 

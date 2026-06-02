@@ -4,31 +4,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 # GARDE-Chat
 
-GARDE-Chat is a scalable, open-source platform that can be used by people without any programming skills to create fully scripted, large language model (LLM) enabled, and hybrid chatbots (conversational agents). GARDE-Chat chatbots can be designed to deliver health education, patient engagement, and access to healthcare services to patients. It is available through an open-source, free license. 
-
-## What problem does GARDE-Chat solve?
-
-GARDE-Chat facilitates the development of chatbot-based interventions without requiring extensive training or programming skills through a drag-and-drop graphical user interface. Chatbots can be shared by researchers and institutions so that chatbots can be developed collaboratively across use cases. GARDE-Chat supports chatbot-based interventions in a variety of study designs, from small pilot/feasibility studies to large pragmatic clinical trials. It integrates with external applications and data sources such as electronic health records and REDCap. Chatbots developed with GARDE-Chat can be delivered via web browsers or text messaging. A detailed audit log supports the analyses of chatbot-user interactions.
-
-## How does GARDE-Chat ensure that chatbots are accurate and have safety guardrails?
-
-Two major concerns when using AI chatbots are “hallucinations” (i.e., a chatbot provides inaccurate/fabricated information) and a chatbot providing information that is beyond its desired scope (e.g., providing medical advice even when it was prompted not to do so). GARDE-Chat offers different approaches to address these concerns: 
-1.	GARDE-Chat allows researchers to develop rule-based/scripted chatbots that do not use AI or limit AI to specific sections of the chatbot. A rule-based chatbot has predefined options with a fixed set of possible questions and responses that are fully scripted by humans. This alternative offers consistency, predictability, accuracy, and tight guardrails. A hybrid approach includes core scripted content with limited opportunities to ask questions to an LLM. GARDE-Chat provides support for fully scripted, LLM-based and hybrid chatbots. 
-2.	GARDE-Chat interfaces with LLMs via an application programming interface (API). As such, end users always interact with LLMs via the GARDE-Chat user interface, constrained by prompts designed by the chatbot authors, and never with the LLMs directly.
-3.	Optimal prompt engineering techniques, such as retrieval augmented generation (RAG), have been shown to significantly reduce the risk of hallucinations.
-4.	GARDE-Chat provides a dashboard that allows continuous, real-time monitoring of user interactions with chatbots to help identify potential problems.
-
-## My institution is very concerned with privacy. How can GARDE-Chat address this concern?
-
-GARDE-Chat addresses participant privacy in a few ways:
-1.	Rule-based/scripted chatbots can run on HIPAA-compliant servers located within the premises of an institution, with patient data never leaving those premises to external servers. Unlike LLMs, rule-based chatbots run on low-cost servers that do not require high performance computational infrastructure with powerful graphical processing units (GPUs).
-2.	GARDE-Chat is integrated with open-source LLMs that can be deployed on HIPAA-compliant servers within the premises of an institution, so that participant information is never sent to external LLM servers. Several academic medical centers already provide such an infrastructure to researchers.
-3.	Several academic medical centers have also established business associate agreements with LLM vendors such as OpenAI and Google to access their cloud-hosted LLMs (e.g., ChatGPT, Gemini) in HIPAA-compliant environments that are not shared with other institutions and do not use the data for LLM training. 
-
-## Is GARDE-Chat secure?
-
-GARDE-Chat was developed by a [seasoned](https://reimagineehr.utah.edu/about/) research team at the University of Utah with funding from the National Cancer Institute and other sources. The software has received security clearance at the UofU and other sites and has been used to support several large pragmatic trials with up to 30,000 participants. GARDE-Chat is being used in research studies at several academic medical centers, including Medical University of South Carolina, Wake Forest University School of Medicine, and Weill Cornell Medicine. Research that relied on GARDE-Chat is described [here](https://pmc.ncbi.nlm.nih.gov/articles/PMC12798686/#ocaf211-T1).
-
 ## Build Research-Ready Health Chatbots Without Programming Skills {-}
 
 <div style="display:flex; align-items:center; gap:50px; margin-top:20px; margin-bottom:30px;">
@@ -158,10 +133,6 @@ Chatbots created with GARDE-Chat can be delivered through web browsers or SMS/te
 GARDE-Chat allows non-programmers to design chatbot workflows using a visual interface instead of custom code. Researchers and institutions can collaborate by sharing chatbot designs and adapting them across studies and populations.
 </p>
 
-<p>
-GARDE-Chat allows non-programmers to design chatbot workflows using a visual interface instead of custom code. Researchers and institutions can collaborate by sharing chatbot designs and adapting them across studies and populations.
-</p>
-
 </div>
 
 <div style="width:42%;">
@@ -182,68 +153,56 @@ GARDE-Chat allows non-programmers to design chatbot workflows using a visual int
 
 #### GARDE-Chat supports the following types of chatbots{-}
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; margin-top:12px; align-items:stretch;">
 
-<div style="flex:0 0 320px; height:380px; border:1px solid #e5e7eb; border-radius:16px; padding:24px; text-align:center; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
+<div style="display:grid; grid-template-columns:repeat(2, minmax(320px, 1fr)); gap:24px; margin-top:12px; justify-items:center;">
 
+<div style="width:320px; height:380px; border:1px solid #e5e7eb; border-radius:16px; padding:24px; text-align:center; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
 <div>
 <h4 style="margin-top:0; margin-bottom:12px;">Scripted</h4>
-
 <p style="margin-top:0; margin-bottom:16px; color:#555; line-height:1.6;">
 Fixed conversation flows<br>
 Predictable responses<br>
 High consistency
 </p>
 </div>
-
 <div style="margin-top:auto;">
 <img src="resources/images/Data-flow.png" alt="Scripted chatbot" style="width:220px; max-width:100%; height:auto; border-radius:12px;">
 </div>
-
 </div>
 
-<div style="flex:0 0 320px; height:380px; border:1px solid #e5e7eb; border-radius:16px; padding:24px; text-align:center; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
-
+<div style="width:320px; height:380px; border:1px solid #e5e7eb; border-radius:16px; padding:24px; text-align:center; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
 <div>
 <h4 style="margin-top:0; margin-bottom:12px;">Hybrid</h4>
-
 <p style="margin-top:0; margin-bottom:16px; color:#555; line-height:1.6;">
 Mix of scripted content and AI<br>
 Balanced flexibility<br>
 Controlled responses
 </p>
 </div>
-
 <div style="margin-top:auto; border-radius:18px; overflow:hidden;">
-
-<img src="resources/images/hybrid.png"
-     alt="Hybrid chatbot"
-     style="width:220px; max-width:100%; height:auto; display:block; border-radius:18px;">
-
+<img src="resources/images/hybrid.png" alt="Hybrid chatbot" style="width:220px; max-width:100%; height:auto; display:block; border-radius:18px;">
+</div>
 </div>
 
-</div>
-
-<div style="flex:0 0 320px; height:380px; border:1px solid #e5e7eb; border-radius:16px; padding:24px; text-align:center; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
-
+<div style="grid-column:1 / -1; display:flex; justify-content:center;">
+<div style="width:320px; height:380px; border:1px solid #e5e7eb; border-radius:16px; padding:24px; text-align:center; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
 <div>
 <h4 style="margin-top:0; margin-bottom:12px;">LLM-enabled</h4>
-
 <p style="margin-top:0; margin-bottom:16px; color:#555; line-height:1.6;">
 More open-ended AI conversation<br>
 Uses large language models<br>
 Natural language interaction
 </p>
 </div>
-
 <div style="margin-top:auto;">
 <img src="resources/images/AI.png" alt="LLM-enabled chatbot" style="width:220px; max-width:100%; height:100%; object-fit:cover; display:block; border-radius:18px;">
 </div>
 </div>
+</div>
 
 </div>
 
-This flexibility allows teams to balance consistency, scalability, and conversational flexibility based on the needs of a project.
+<p>This flexibility allows teams to balance consistency, scalability, and conversational flexibility based on the needs of a project.</p>
 
 ### Designed for Research and Clinical Studies {-}
 

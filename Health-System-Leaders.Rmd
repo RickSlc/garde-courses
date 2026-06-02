@@ -4,7 +4,7 @@
 
 ## Executive summary—choosing GARDE for your health system and patients{-}
 
-<ul style="margin:0; padding-left:30px; font-size:1.15rem; line-height:1.7; color:#333;">
+<ul style="margin:0; padding-left:30px; font-size:1.50rem; line-height:1.7; color:#333;">
 <li style="margin-bottom:22px;">
 GARDE is a population-based tool that automates the provision of healthcare services, like <a href="https://pubmed.ncbi.nlm.nih.gov/16144894/">US Preventive Services Task Force (USPSTF)-recommended cancer genetic testing</a>.
 </li>
@@ -28,16 +28,19 @@ Healthcare systems can provide high quality care <em>without</em> adding to clin
 <div style="border-bottom:6px solid #000;"></div>
 </div>
 
-<ul style="margin:0; padding-left:30px; font-size:1.15rem; line-height:1.7; color:#333;">
+<ul style="margin:0; padding-left:30px; font-size:1.50rem; line-height:1.7; color:#333;">
 <li style="margin-bottom:22px;">
 GARDE population health algorithms screen patients’ family histories in the electronic health record (EHR) to identify patients eligible for healthcare services, like genetic testing.
 </li>
+
 <li style="margin-bottom:22px;">
 GARDE includes a chatbot authoring platform (<a href="https://garde.utah.edu/what-is-garde-chat.html">GARDE-Chat</a>) for patient outreach, education, and access to genetic testing.
 </li>
+
 <li style="margin-bottom:22px;">
 Recommended healthcare can be facilitated and centrally managed by genetic counselors or other clinicians.
 </li>
+
 <li style="margin-bottom:0;">
 GARDE can help your healthcare system identify and manage patients at high risk for hereditary cancer.
 </li>
@@ -65,7 +68,7 @@ In the U.S. in 2020, there were over 1.6M new cancer diagnoses and >600,000 peop
 
 When used to identify patients at elevated risk to harbor a pathogenic variant in a hereditary cancer gene, implementing GARDE may help define a cancer center’s approach to meeting the [Commission on Cancer 2020](https://www.facs.org/quality-programs/cancer-programs/commission-on-cancer/standards-and-resources/2020/) Standard 4.4, Genetic Counseling and Risk Assessment.
 
-Additional use cases can be found [here](file:///Users/acmadeo/University%20of%20Utah%20PHS/Kaphingst%20RA/GARDE/GIT/garde-courses/docs/potential-use-cases.html#healthcare-system-leaders).
+Additional use cases can be found [here](https://garde.utah.edu/potential-use-cases.html).
 
 ## What problem does GARDE solve?{-}
 
@@ -109,6 +112,6 @@ GARDE is highly customizable. The time necessary to implement GARDE will depend 
 
 ## How can I download this information?{-}
 
-If you want to download this information, just click [here](resources/pdfs/Healthcare-system-leaders.pdf){target="_blank"}for a pdf!
+If you want to download this information, just click [here](resources/pdfs/Healthcare-system-leaders.pdf){target="_blank"} for a pdf!
 
 
