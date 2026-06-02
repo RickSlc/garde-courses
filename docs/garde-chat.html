@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 GARDE-Chat | GARDE</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 GARDE-Chat | GARDE" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 GARDE-Chat | GARDE" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+<meta name="date" content="2026-06-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="garde-implementation.html"/>
+<link rel="next" href="about-the-authors.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://reimagineehr.utah.edu/innovations/garde/"><img src="resources/images/garde-cyan.svg" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About GARDE</a></li>
+<li class="chapter" data-level="1" data-path="what-is-garde.html"><a href="what-is-garde.html"><i class="fa fa-check"></i><b>1</b> What is GARDE?</a></li>
+<li class="chapter" data-level="2" data-path="health-system-leaders.html"><a href="health-system-leaders.html"><i class="fa fa-check"></i><b>2</b> Health System Leaders</a>
+<ul>
+<li class="chapter" data-level="" data-path="health-system-leaders.html"><a href="health-system-leaders.html#executive-summarychoosing-garde-for-your-health-system-and-patients"><i class="fa fa-check"></i>Executive summary—choosing GARDE for your health system and patients</a></li>
+<li class="chapter" data-level="" data-path="health-system-leaders.html"><a href="health-system-leaders.html#why-should-we-implement-garde-in-our-organization"><i class="fa fa-check"></i>Why should we implement GARDE in our organization?</a></li>
+<li class="chapter" data-level="" data-path="health-system-leaders.html"><a href="health-system-leaders.html#what-problem-does-garde-solve"><i class="fa fa-check"></i>What problem does GARDE solve?</a></li>
+<li class="chapter" data-level="" data-path="health-system-leaders.html"><a href="health-system-leaders.html#what-is-the-roi-of-implementing-garde"><i class="fa fa-check"></i>What is the ROI of implementing GARDE?</a></li>
+<li class="chapter" data-level="" data-path="health-system-leaders.html"><a href="health-system-leaders.html#can-i-trust-garde"><i class="fa fa-check"></i>Can I trust GARDE?</a></li>
+<li class="chapter" data-level="" data-path="health-system-leaders.html"><a href="health-system-leaders.html#will-our-patients-data-be-leaving-our-organization-what-protections-are-in-place-for-the-data-transmitted"><i class="fa fa-check"></i>Will our patients’ data be leaving our organization? What protections are in place for the data transmitted?</a></li>
+<li class="chapter" data-level="" data-path="health-system-leaders.html"><a href="health-system-leaders.html#is-this-another-application-that-claims-its-out-of-the-box-but-my-staff-wont-be-able-to-use"><i class="fa fa-check"></i>Is this another application that claims it’s out-of-the-box, but my staff won’t be able to use?</a></li>
+<li class="chapter" data-level="" data-path="health-system-leaders.html"><a href="health-system-leaders.html#how-long-will-it-take-to-implement-garde"><i class="fa fa-check"></i>How long will it take to implement GARDE?</a></li>
+<li class="chapter" data-level="" data-path="health-system-leaders.html"><a href="health-system-leaders.html#how-can-i-download-this-information"><i class="fa fa-check"></i>How can I download this information?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="primary-care-line-leaders.html"><a href="primary-care-line-leaders.html"><i class="fa fa-check"></i><b>3</b> Primary Care Line Leaders</a>
+<ul>
+<li class="chapter" data-level="" data-path="primary-care-line-leaders.html"><a href="primary-care-line-leaders.html#executive-summarygarde-the-primary-care-team-and-primary-care-patients"><i class="fa fa-check"></i>Executive summary—GARDE, the primary care team, and primary care patients</a></li>
+<li class="chapter" data-level="" data-path="primary-care-line-leaders.html"><a href="primary-care-line-leaders.html#what-are-some-of-the-lifetime-cancer-risks-associated-with-hereditary-cancer-syndromes"><i class="fa fa-check"></i>What are some of the lifetime cancer risks associated with hereditary cancer syndromes?</a></li>
+<li class="chapter" data-level="" data-path="primary-care-line-leaders.html"><a href="primary-care-line-leaders.html#what-if-a-patients-family-history-in-the-ehr-is-incomplete"><i class="fa fa-check"></i>What if a patient’s family history in the EHR is incomplete?</a></li>
+<li class="chapter" data-level="" data-path="primary-care-line-leaders.html"><a href="primary-care-line-leaders.html#how-do-patients-pay-for-genetic-testing"><i class="fa fa-check"></i>How do patients pay for genetic testing?</a></li>
+<li class="chapter" data-level="" data-path="primary-care-line-leaders.html"><a href="primary-care-line-leaders.html#can-i-trust-garde-1"><i class="fa fa-check"></i>Can I trust GARDE?</a></li>
+<li class="chapter" data-level="" data-path="primary-care-line-leaders.html"><a href="primary-care-line-leaders.html#can-garde-address-other-research-questions-or-clinical-needs"><i class="fa fa-check"></i>Can GARDE address other research questions or clinical needs?</a></li>
+<li class="chapter" data-level="" data-path="primary-care-line-leaders.html"><a href="primary-care-line-leaders.html#how-many-patients-are-likely-to-receive-genetic-testing-through-garde"><i class="fa fa-check"></i>How many patients are likely to receive genetic testing through GARDE?</a></li>
+<li class="chapter" data-level="" data-path="primary-care-line-leaders.html"><a href="primary-care-line-leaders.html#i-have-other-questions-about-garde.-is-there-somebody-i-can-speak-with"><i class="fa fa-check"></i>I have other questions about GARDE. Is there somebody I can speak with?</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="potential-use-cases.html"><a href="potential-use-cases.html"><i class="fa fa-check"></i><b>4</b> Potential Use Cases</a>
+<ul>
+<li class="chapter" data-level="" data-path="potential-use-cases.html"><a href="potential-use-cases.html#primary-care-line-leaders-1"><i class="fa fa-check"></i>Primary care line leaders</a></li>
+<li class="chapter" data-level="" data-path="potential-use-cases.html"><a href="potential-use-cases.html#healthcare-system-leaders"><i class="fa fa-check"></i>Healthcare system leaders</a></li>
+<li class="chapter" data-level="" data-path="potential-use-cases.html"><a href="potential-use-cases.html#researchers"><i class="fa fa-check"></i>Researchers</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="garde-implementation-overview.html"><a href="garde-implementation-overview.html"><i class="fa fa-check"></i><b>5</b> GARDE Implementation Overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="garde-implementation-overview.html"><a href="garde-implementation-overview.html#previous-garde-implementation"><i class="fa fa-check"></i>Previous GARDE implementation</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation-overview.html"><a href="garde-implementation-overview.html#initial-integration-requirements"><i class="fa fa-check"></i>Initial Integration Requirements</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation-overview.html"><a href="garde-implementation-overview.html#it-requirements"><i class="fa fa-check"></i>IT Requirements</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation-overview.html"><a href="garde-implementation-overview.html#steps-to-deploy"><i class="fa fa-check"></i>Steps to deploy</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation-overview.html"><a href="garde-implementation-overview.html#contact-information"><i class="fa fa-check"></i>Contact information</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="garde-implementation.html"><a href="garde-implementation.html"><i class="fa fa-check"></i><b>6</b> GARDE Implementation</a>
+<ul>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#governance-review-and-approval"><i class="fa fa-check"></i>Governance Review and Approval</a>
+<ul>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#additional-information"><i class="fa fa-check"></i>Additional information</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#what-can-facilitate-governance-review"><i class="fa fa-check"></i>What can facilitate governance review?</a>
+<ul>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#identify-key-stakeholders-and-champions-for-your-project"><i class="fa fa-check"></i>Identify key stakeholders and champions for your project</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#garde-architecture"><i class="fa fa-check"></i>GARDE Architecture</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#deployment-requirements"><i class="fa fa-check"></i>Deployment Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#it-human-resources"><i class="fa fa-check"></i>IT Human Resources</a>
+<ul>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#planning"><i class="fa fa-check"></i>Planning</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#deployment"><i class="fa fa-check"></i>Deployment</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#epic-integration"><i class="fa fa-check"></i>Epic Integration</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#chatbot-integration-and-deployment"><i class="fa fa-check"></i>Chatbot integration and deployment</a></li>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#operations-maintenance"><i class="fa fa-check"></i>Operations &amp; Maintenance</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#clinical-human-resources"><i class="fa fa-check"></i>Clinical Human Resources</a>
+<ul>
+<li class="chapter" data-level="" data-path="garde-implementation.html"><a href="garde-implementation.html#planning-1"><i class="fa fa-check"></i>Planning</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="garde-chat.html"><a href="garde-chat.html"><i class="fa fa-check"></i><b>7</b> GARDE-Chat</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="garde-chat.html"><a href="garde-chat.html#what-problem-does-garde-chat-solve"><i class="fa fa-check"></i><b>7.1</b> What problem does GARDE-Chat solve?</a></li>
+<li class="chapter" data-level="7.2" data-path="garde-chat.html"><a href="garde-chat.html#how-does-garde-chat-ensure-that-chatbots-are-accurate-and-have-safety-guardrails"><i class="fa fa-check"></i><b>7.2</b> How does GARDE-Chat ensure that chatbots are accurate and have safety guardrails?</a></li>
+<li class="chapter" data-level="7.3" data-path="garde-chat.html"><a href="garde-chat.html#my-institution-is-very-concerned-with-privacy.-how-can-garde-chat-address-this-concern"><i class="fa fa-check"></i><b>7.3</b> My institution is very concerned with privacy. How can GARDE-Chat address this concern?</a></li>
+<li class="chapter" data-level="7.4" data-path="garde-chat.html"><a href="garde-chat.html#is-garde-chat-secure"><i class="fa fa-check"></i><b>7.4</b> Is GARDE-Chat secure?</a></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#build-research-ready-health-chatbots-without-programming-skills"><i class="fa fa-check"></i>Build Research-Ready Health Chatbots Without Programming Skills</a></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#garde-chat-use-cases"><i class="fa fa-check"></i>GARDE-Chat use cases</a></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#advantages-of-garde-chat"><i class="fa fa-check"></i>Advantages of GARDE-Chat</a>
+<ul>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#no-code-chatbot-development"><i class="fa fa-check"></i>No-Code Chatbot Development</a></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#flexible-approaches"><i class="fa fa-check"></i>Flexible Approaches</a></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#designed-for-research-and-clinical-studies"><i class="fa fa-check"></i>Designed for Research and Clinical Studies</a></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#accuracy-safety-and-guardrails"><i class="fa fa-check"></i>Accuracy, Safety, and Guardrails</a></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#privacy-and-data-protection"><i class="fa fa-check"></i>Privacy and Data Protection</a></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#security-and-real-world-use"><i class="fa fa-check"></i>Security and Real-World Use</a></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#open-source-and-available-to-researchers"><i class="fa fa-check"></i>Open Source and Available to Researchers</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="garde-chat.html"><a href="garde-chat.html#contact-information-1"><i class="fa fa-check"></i>Contact information</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GARDE</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+
+
+
+<div class="hero-image-container">
+  <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
+</div>
+<div id="garde-chat" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> GARDE-Chat<a href="garde-chat.html#garde-chat" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>GARDE-Chat is a scalable, open-source platform that can be used by people without any programming skills to create fully scripted, large language model (LLM) enabled, and hybrid chatbots (conversational agents). GARDE-Chat chatbots can be designed to deliver health education, patient engagement, and access to healthcare services to patients. It is available through an open-source, free license.</p>
+<div id="what-problem-does-garde-chat-solve" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> What problem does GARDE-Chat solve?<a href="garde-chat.html#what-problem-does-garde-chat-solve" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>GARDE-Chat facilitates the development of chatbot-based interventions without requiring extensive training or programming skills through a drag-and-drop graphical user interface. Chatbots can be shared by researchers and institutions so that chatbots can be developed collaboratively across use cases. GARDE-Chat supports chatbot-based interventions in a variety of study designs, from small pilot/feasibility studies to large pragmatic clinical trials. It integrates with external applications and data sources such as electronic health records and REDCap. Chatbots developed with GARDE-Chat can be delivered via web browsers or text messaging. A detailed audit log supports the analyses of chatbot-user interactions.</p>
+</div>
+<div id="how-does-garde-chat-ensure-that-chatbots-are-accurate-and-have-safety-guardrails" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> How does GARDE-Chat ensure that chatbots are accurate and have safety guardrails?<a href="garde-chat.html#how-does-garde-chat-ensure-that-chatbots-are-accurate-and-have-safety-guardrails" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Two major concerns when using AI chatbots are “hallucinations” (i.e., a chatbot provides inaccurate/fabricated information) and a chatbot providing information that is beyond its desired scope (e.g., providing medical advice even when it was prompted not to do so). GARDE-Chat offers different approaches to address these concerns:
+1. GARDE-Chat allows researchers to develop rule-based/scripted chatbots that do not use AI or limit AI to specific sections of the chatbot. A rule-based chatbot has predefined options with a fixed set of possible questions and responses that are fully scripted by humans. This alternative offers consistency, predictability, accuracy, and tight guardrails. A hybrid approach includes core scripted content with limited opportunities to ask questions to an LLM. GARDE-Chat provides support for fully scripted, LLM-based and hybrid chatbots.
+2. GARDE-Chat interfaces with LLMs via an application programming interface (API). As such, end users always interact with LLMs via the GARDE-Chat user interface, constrained by prompts designed by the chatbot authors, and never with the LLMs directly.
+3. Optimal prompt engineering techniques, such as retrieval augmented generation (RAG), have been shown to significantly reduce the risk of hallucinations.
+4. GARDE-Chat provides a dashboard that allows continuous, real-time monitoring of user interactions with chatbots to help identify potential problems.</p>
+</div>
+<div id="my-institution-is-very-concerned-with-privacy.-how-can-garde-chat-address-this-concern" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> My institution is very concerned with privacy. How can GARDE-Chat address this concern?<a href="garde-chat.html#my-institution-is-very-concerned-with-privacy.-how-can-garde-chat-address-this-concern" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>GARDE-Chat addresses participant privacy in a few ways:
+1. Rule-based/scripted chatbots can run on HIPAA-compliant servers located within the premises of an institution, with patient data never leaving those premises to external servers. Unlike LLMs, rule-based chatbots run on low-cost servers that do not require high performance computational infrastructure with powerful graphical processing units (GPUs).
+2. GARDE-Chat is integrated with open-source LLMs that can be deployed on HIPAA-compliant servers within the premises of an institution, so that participant information is never sent to external LLM servers. Several academic medical centers already provide such an infrastructure to researchers.
+3. Several academic medical centers have also established business associate agreements with LLM vendors such as OpenAI and Google to access their cloud-hosted LLMs (e.g., ChatGPT, Gemini) in HIPAA-compliant environments that are not shared with other institutions and do not use the data for LLM training.</p>
+</div>
+<div id="is-garde-chat-secure" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> Is GARDE-Chat secure?<a href="garde-chat.html#is-garde-chat-secure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>GARDE-Chat was developed by a <a href="https://reimagineehr.utah.edu/about/">seasoned</a> research team at the University of Utah with funding from the National Cancer Institute and other sources. The software has received security clearance at the UofU and other sites and has been used to support several large pragmatic trials with up to 30,000 participants. GARDE-Chat is being used in research studies at several academic medical centers, including Medical University of South Carolina, Wake Forest University School of Medicine, and Weill Cornell Medicine. Research that relied on GARDE-Chat is described <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12798686/#ocaf211-T1">here</a>.</p>
+</div>
+<div id="build-research-ready-health-chatbots-without-programming-skills" class="section level2 unnumbered hasAnchor">
+<h2>Build Research-Ready Health Chatbots Without Programming Skills<a href="garde-chat.html#build-research-ready-health-chatbots-without-programming-skills" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div style="display:flex; align-items:center; gap:50px; margin-top:20px; margin-bottom:30px;">
+<!-- LEFT SIDE: IMAGE BOX -->
+<div style="width:42%;">
+<div style="      
+background:#f8fafc;      
+padding:18px;      
+border-radius:28px;      
+box-shadow:0 8px 24px rgba(0,0,0,0.08);      
+overflow:hidden;      
+display:flex;      
+flex-direction:column;      
+gap:14px;    
+">
+<p><img  src="resources/images/workflow-builder.png"           
+      alt="GARDE-Chat workflow builder"           
+      style="             
+      width:100%;             
+      height:auto;             
+      display:block;             
+      border-radius:18px;           
+      "></p>
+<p><img  src="resources/images/edit-node.png"           
+      alt="GARDE-Chat edit node"
+      style="
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:18px;
+      "></p>
+</div>
+</div>
+<!-- RIGHT SIDE: TEXT -->
+<div style="width:58%;">
+<p>GARDE-Chat is an open-source platform for creating fully scripted, AI-enabled, and hybrid chatbots for healthcare and clinical research. Designed for researchers, clinicians, and healthcare organizations, GARDE-Chat makes it possible to build and deploy conversational experiences through a visual drag-and-drop interface — without requiring advanced programming skills.</p>
+</div>
+</div>
+</div>
+<div id="garde-chat-use-cases" class="section level2 unnumbered hasAnchor">
+<h2>GARDE-Chat use cases<a href="garde-chat.html#garde-chat-use-cases" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin-top:20px;">
+<div style="width:320px; text-align:center;">
+<div style="width:240px; height:180px; margin:0 auto; border-radius:18px; overflow:hidden;">
+<p><img src="resources/images/health-education.png" style="width:100%; height:100%; object-fit:cover; display:block; border-radius:18px;"></p>
+</div>
+<p>
+<strong>Health Education</strong>
+</p>
+</div>
+<div style="width:320px; text-align:center;">
+<div style="width:240px; height:180px; margin:0 auto; border-radius:18px; overflow:hidden;">
+<p><img src="resources/images/patient-engagement.png" style="width:100%; height:100%; object-fit:cover; display:block; border-radius:18px;"></p>
+</div>
+<p>
+<strong>Patient Engagement</strong>
+</p>
+</div>
+<div style="width:320px; text-align:center;">
+<div style="width:240px; height:180px; margin:0 auto; border-radius:18px; overflow:hidden;">
+<p><img src="resources/images/Recruitment-image.png" style="width:100%; height:100%; object-fit:cover; display:block; border-radius:18px;"></p>
+</div>
+<p>
+<strong>Clinical Research Recruitment and Retention</strong>
+</p>
+</div>
+<div style="width:320px; text-align:center;">
+<div style="width:240px; height:180px; margin:0 auto; border-radius:18px; overflow:hidden;">
+<p><img src="resources/images/monitor-sx.png" style="width:100%; height:100%; object-fit:cover; display:block; border-radius:18px;"></p>
+</div>
+<p>
+<strong>Symptom Monitoring and Follow-Up</strong>
+</p>
+</div>
+<div style="width:320px; text-align:center;">
+<div style="width:240px; height:180px; margin:0 auto; border-radius:18px; overflow:hidden;">
+<p><img src="resources/images/healthcare-access.png" style="width:100%; height:100%; object-fit:cover; display:block; border-radius:18px;"></p>
+</div>
+<p>
+<strong>Access to Healthcare Services</strong>
+</p>
+</div>
+<div style="width:320px; text-align:center;">
+<div style="width:240px; height:180px; margin:0 auto; border-radius:18px; overflow:hidden;">
+<p><img src="resources/images/lifestyle-intervention-image.png" style="width:100%; height:100%; object-fit:cover; display:block; border-radius:18px;"></p>
+</div>
+<p>
+<strong>Behavioral and Lifestyle Interventions</strong>
+</p>
+</div>
+</div>
+<p>Chatbots created with GARDE-Chat can be delivered through web browsers or SMS/text messaging.</p>
+</div>
+<div id="advantages-of-garde-chat" class="section level2 unnumbered hasAnchor">
+<h2>Advantages of GARDE-Chat<a href="garde-chat.html#advantages-of-garde-chat" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="no-code-chatbot-development" class="section level3 unnumbered hasAnchor">
+<h3>No-Code Chatbot Development<a href="garde-chat.html#no-code-chatbot-development" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div style="display:flex; gap:32px; align-items:center; margin-top:16px; margin-bottom:28px;">
+<div style="width:58%;">
+<p>
+GARDE-Chat allows non-programmers to design chatbot workflows using a visual interface instead of custom code. Researchers and institutions can collaborate by sharing chatbot designs and adapting them across studies and populations.
+</p>
+<p>
+GARDE-Chat allows non-programmers to design chatbot workflows using a visual interface instead of custom code. Researchers and institutions can collaborate by sharing chatbot designs and adapting them across studies and populations.
+</p>
+</div>
+<div style="width:42%;">
+<div style="background:#f8fafc; padding:16px; border-radius:20px; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+<p><img src="resources/images/edit-node.png"
+     alt="GARDE-Chat workflow builder"
+     style="width:100%; display:block; border-radius:14px;"></p>
+</div>
+</div>
+</div>
+</div>
+<div id="flexible-approaches" class="section level3 unnumbered hasAnchor">
+<h3>Flexible Approaches<a href="garde-chat.html#flexible-approaches" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="garde-chat-supports-the-following-types-of-chatbots" class="section level4 unnumbered hasAnchor">
+<h4>GARDE-Chat supports the following types of chatbots<a href="garde-chat.html#garde-chat-supports-the-following-types-of-chatbots" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div style="display:flex; flex-wrap:wrap; gap:24px; margin-top:12px; align-items:stretch;">
+<div style="flex:0 0 320px; height:380px; border:1px solid #e5e7eb; border-radius:16px; padding:24px; text-align:center; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
+<div>
+<h4 style="margin-top:0; margin-bottom:12px;">
+Scripted
+</h4>
+<p style="margin-top:0; margin-bottom:16px; color:#555; line-height:1.6;">
+Fixed conversation flows<br>
+Predictable responses<br>
+High consistency
+</p>
+</div>
+<div style="margin-top:auto;">
+<p><img src="resources/images/Data-flow.png" alt="Scripted chatbot" style="width:220px; max-width:100%; height:auto; border-radius:12px;"></p>
+</div>
+</div>
+<div style="flex:0 0 320px; height:380px; border:1px solid #e5e7eb; border-radius:16px; padding:24px; text-align:center; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
+<div>
+<h4 style="margin-top:0; margin-bottom:12px;">
+Hybrid
+</h4>
+<p style="margin-top:0; margin-bottom:16px; color:#555; line-height:1.6;">
+Mix of scripted content and AI<br>
+Balanced flexibility<br>
+Controlled responses
+</p>
+</div>
+<div style="margin-top:auto; border-radius:18px; overflow:hidden;">
+<p><img src="resources/images/Hybrid.png"
+     alt="Hybrid chatbot"
+     style="width:220px; max-width:100%; height:auto; display:block; border-radius:18px;"></p>
+</div>
+</div>
+<div style="flex:0 0 320px; height:380px; border:1px solid #e5e7eb; border-radius:16px; padding:24px; text-align:center; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
+<div>
+<h4 style="margin-top:0; margin-bottom:12px;">
+LLM-enabled
+</h4>
+<p style="margin-top:0; margin-bottom:16px; color:#555; line-height:1.6;">
+More open-ended AI conversation<br>
+Uses large language models<br>
+Natural language interaction
+</p>
+</div>
+<div style="margin-top:auto;">
+<p><img src="resources/images/AI.png" alt="LLM-enabled chatbot" style="width:220px; max-width:100%; height:100%; object-fit:cover; display:block; border-radius:18px;"></p>
+</div>
+</div>
+</div>
+<p>This flexibility allows teams to balance consistency, scalability, and conversational flexibility based on the needs of a project.</p>
+</div>
+</div>
+<div id="designed-for-research-and-clinical-studies" class="section level3 unnumbered hasAnchor">
+<h3>Designed for Research and Clinical Studies<a href="garde-chat.html#designed-for-research-and-clinical-studies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table style="width:100%; border-collapse:collapse; margin-top:20px;">
+<tr>
+<td style="width:52%; vertical-align:middle; padding-right:30px;">
+<p>GARDE-Chat supports a wide range of study designs, from pilot studies to large pragmatic clinical trials. The platform includes:</p>
+<ul>
+<li>Detailed audit logs of chatbot-user interactions</li>
+<li>Integration with external systems and data sources</li>
+<li>Support for longitudinal and multi-step interventions</li>
+</ul>
+<p>GARDE-Chat can integrate with varied systems, including:</p>
+<ul>
+<li>Electronic health records (EHRs)</li>
+<li>REDCap</li>
+<li>Other research and clinical data systems</li>
+</ul>
+</td>
+<td style="width:48%; vertical-align:middle; text-align:center;">
+<p><img src="resources/images/Designed.png"
+     alt="A participant and facilitator reviewing a tablet in a healthcare or research setting"
+     style="width:130%; max-width:none; margin-left:-15%; height:auto; display:block; border-radius:18px;"></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="accuracy-safety-and-guardrails" class="section level3 unnumbered hasAnchor">
+<h3>Accuracy, Safety, and Guardrails<a href="garde-chat.html#accuracy-safety-and-guardrails" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table style="width:100%; border-collapse:collapse; margin-top:20px;">
+<tr>
+<td style="width:45%; vertical-align:top; padding-right:30px;">
+<p>Healthcare organizations and researchers often have concerns about AI-generated misinformation, hallucinations, and unintended medical advice.</p>
+<p>GARDE-Chat includes the following approaches, which support safer and more controlled chatbot experiences.</p>
+</td>
+<td style="width:55%; vertical-align:middle;">
+<p><img src="resources/images/Safety.png"
+     alt="Healthcare workstation supporting safe and controlled chatbot workflows"
+     style="width:120%; max-width:none; margin-left:-10%; height:auto; display:block;"></p>
+</td>
+</tr>
+</table>
+<div id="scripted-and-hybrid-workflows" class="section level4 unnumbered hasAnchor">
+<h4>Scripted and Hybrid Workflows<a href="garde-chat.html#scripted-and-hybrid-workflows" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Teams can create fully scripted chatbots with fixed questions and responses, reducing variability and helping ensure consistency and accuracy.</p>
+<p>Hybrid chatbot designs allow organizations to keep core educational or clinical content fully scripted while limiting where AI-generated responses are used.</p>
+</div>
+<div id="controlled-access-to-llms" class="section level4 unnumbered hasAnchor">
+<h4>Controlled Access to LLMs<a href="garde-chat.html#controlled-access-to-llms" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>When large language models are used, participants interact with the chatbot through the GARDE-Chat interface rather than directly with the model itself. Researchers can configure prompts, workflows, and constraints to help guide chatbot behavior.</p>
+</div>
+<div id="retrieval-augmented-generation-rag" class="section level4 unnumbered hasAnchor">
+<h4>Retrieval-Augmented Generation (RAG)<a href="garde-chat.html#retrieval-augmented-generation-rag" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>RAG can help ground responses in approved source material and reduce the likelihood of inaccurate or fabricated answers.</p>
+</div>
+<div id="monitoring-and-oversight" class="section level4 unnumbered hasAnchor">
+<h4>Monitoring and Oversight<a href="garde-chat.html#monitoring-and-oversight" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>GARDE-Chat includes dashboards and audit logs that allow research teams to review chatbot interactions and monitor chatbot performance over time.</p>
+</div>
+</div>
+<div id="privacy-and-data-protection" class="section level3 unnumbered hasAnchor">
+<h3>Privacy and Data Protection<a href="garde-chat.html#privacy-and-data-protection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table style="width:100%; border-collapse:collapse; margin-top:20px;">
+<tr>
+<td style="width:52%; vertical-align:middle; padding-right:40px;">
+<p><img src="resources/images/Server-Kawamoto.png"
+     alt="Institutional server infrastructure"
+     style="width:100%; height:auto; display:block; border-radius:18px;"></p>
+</td>
+<td style="width:48%; vertical-align:middle;">
+<p>GARDE-Chat was designed with healthcare and research privacy requirements in mind.</p>
+</td>
+</tr>
+</table>
+<div id="on-premise-deployment-options" class="section level4 unnumbered hasAnchor">
+<h4>On-Premise Deployment Options<a href="garde-chat.html#on-premise-deployment-options" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Scripted chatbots can be deployed on HIPAA-compliant institutional infrastructure, allowing participant data to remain within the organization’s environment.</p>
+</div>
+<div id="support-for-self-hosted-open-source-models" class="section level4 unnumbered hasAnchor">
+<h4>Support for Self-Hosted Open-Source Models<a href="garde-chat.html#support-for-self-hosted-open-source-models" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>GARDE-Chat can integrate with open-source large language models that are deployed within an institution’s own secure infrastructure.</p>
+</div>
+<div id="compatibility-with-enterprise-llm-environments" class="section level4 unnumbered hasAnchor">
+<h4>Compatibility with Enterprise LLM Environments<a href="garde-chat.html#compatibility-with-enterprise-llm-environments" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Some institutions maintain HIPAA-compliant agreements and environments for commercial LLM providers such as OpenAI or Google. GARDE-Chat can be configured to work within those institutional environments when available.</p>
+<p>Institutional privacy, security, and compliance requirements vary, and organizations should evaluate deployment configurations based on their own policies and regulatory obligations.</p>
+</div>
+</div>
+<div id="security-and-real-world-use" class="section level3 unnumbered hasAnchor">
+<h3>Security and Real-World Use<a href="garde-chat.html#security-and-real-world-use" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GARDE-Chat was developed by <a href="https://reimagineehr.utah.edu/about/">researchers at the University of Utah</a> with support from the National Cancer Institute and other funding sources.</p>
+<p>The platform has been used in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12798686/#ocaf211-T1">multiple research studies and pragmatic clinical trials</a>, including studies involving large participant populations.</p>
+<p>GARDE-Chat has also been used in research collaborations involving institutions such as:</p>
+<ul>
+<li>University of Utah</li>
+<li>Medical University of South Carolina</li>
+<li>Wake Forest University School of Medicine</li>
+<li>Weill Cornell Medicine</li>
+</ul>
+</div>
+<div id="open-source-and-available-to-researchers" class="section level3 unnumbered hasAnchor">
+<h3>Open Source and Available to Researchers<a href="garde-chat.html#open-source-and-available-to-researchers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table style="width:100%; border-collapse:collapse; margin-top:20px;">
+<tr>
+<td style="width:42%; vertical-align:middle; padding-right:30px;">
+<p>GARDE-Chat is available under an open-source license, allowing researchers and institutions to adapt and extend the platform for their own healthcare and research applications.</p>
+</td>
+<td style="width:58%; vertical-align:middle; text-align:center;">
+<p><img src="resources/images/Open-Source.png"
+     alt="Open-source software and web technologies"
+     style="width:120%; max-width:none; margin-left:-10%; height:auto; display:block;"></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="contact-information-1" class="section level2 unnumbered hasAnchor">
+<h2>Contact information<a href="garde-chat.html#contact-information-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For additional information or collaboration opportunities, <a href="mailto:GARDE@hci.utah.edu">email the GARDE team</a>.</p>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="garde-implementation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

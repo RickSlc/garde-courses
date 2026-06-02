@@ -5,6 +5,10 @@ repo: https://github.com/RickSlc/garde-courses/
 rmd_files: 
   - index.Rmd
   - what-is-GARDE.Rmd
+  - Health-system-leaders.Rmd
+  - PrimaryCare-Leaders.Rmd
+  - Use-Cases.Rmd
+  - GARDE-implementation-overview.Rmd
   - GARDE_implementation.Rmd
   # - 01-GARDE-architectural-overview.Rmd
   # - 02-GARDE-user-guide.Rmd
