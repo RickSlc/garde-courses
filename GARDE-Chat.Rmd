@@ -149,10 +149,9 @@ GARDE-Chat allows non-programmers to design chatbot workflows using a visual int
 
 </div>
 
-### Flexible Approaches {-}
+### Flexible Approaches{-}
 
 #### GARDE-Chat supports the following types of chatbots{-}
-
 
 <div style="display:grid; grid-template-columns:repeat(2, minmax(320px, 1fr)); gap:24px; margin-top:12px; justify-items:center;">
 
