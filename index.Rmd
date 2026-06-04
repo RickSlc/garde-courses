@@ -6,12 +6,18 @@ documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
-description: "Description about Course/Book."
+description: "Description about Book."
 favicon: assets/dasl_favicon.ico
 output:
     bookdown::word_document2:
       toc: true
 ---
+
+<script>
+window.location.replace("what-is-garde.html");
+</script>
+<p>If you are not redirected automatically, <a href="what-is-garde.html">click here</a>.</p>
+
 
 # About GARDE {-}
 
