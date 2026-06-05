@@ -1,5 +1,5 @@
 
-# About the Authors {-}
+# The GARDE team {-}
 
 These credits are based on our [course contributors table guidelines](https://www.ottrproject.org/more_features.html#giving-credits-to-contributors).
 
@@ -8,14 +8,11 @@ These credits are based on our [course contributors table guidelines](https://ww
 
 |Credits|Names|
 |-------|-----|
-|**Pedagogy**||
-|Lead Content Instructor(s)|[Guilherme Del Fiol]|
-|Lecturer(s)| |
+|**The GARDE Team**||
+|Investigators|[Guilherme Del Fiol],  [Kensaku Kawamoto] |
 |Content Author(s) | [Richard Bradshaw] |
-|Content Contributor(s)| [Anne Madeo], [Jiantao Bian] |
-|Content Editor(s)/Reviewer(s) | |
-|Content Director(s) | |
-|Content Consultants | |
+|Content Contributor(s)| [Anne Madeo](https://scholar.google.com/citations?user=_qob5eoAAAAJ&hl=en&authuser=3), [Jiantao Bian] |
+|Technical Teams | |
 |Acknowledgments| |
 |**Production**||
 |Content Publisher(s)| [Richard Bradshaw] |
@@ -29,21 +26,17 @@ These credits are based on our [course contributors table guidelines](https://ww
 |**Art and Design**||
 |Illustrator(s)| [Richard Bradshaw] |
 |Figure Artist(s)| [Richard Bradshaw] |
-|Videographer(s)| |
-|Videography Editor(s)| |
-|Audiographer(s)| |
-|Audiography Editor(s)| |
 |**Funding**||
 |Funder(s)| [NCI U24CA204800], [NCI U01CA232826] |
-|Funding Staff| |
-
 &nbsp;
 
 <!-- Author information -->
 
 [Guilherme Del Fiol]: https://medicine.utah.edu/faculty/mddetail/u0420797
+[Kensaku Kawamoto]:
+https://medicine.utah.edu/faculty/kensaku-kawamoto
 [Richard Bradshaw]: https://scholar.google.com/citations?user=0lAuthAAAAAJ&hl=en
-[Anne Madeo]: https://www.ncbi.nlm.nih.gov/myncbi/anne.madeo.2/bibliography/public/
+[Anne Madeo]: https://scholar.google.com/citations?user=_qob5eoAAAAJ&hl=en&authuser=3
 [Jiantao Bian]: https://scholar.google.com/citations?user=FliJ45sAAAAJ&hl=en
 [John Muschelli]: https://johnmuschelli.com/
 [Candace Savonen]: https://www.cansavvy.com/
@@ -51,7 +44,6 @@ These credits are based on our [course contributors table guidelines](https://ww
 [Ava Hoffman]: https://www.avahoffman.com/
 
 <!-- Links -->
-
 [ottrpal]: https://github.com/jhudsl/ottrpal
 
 <!--Funding links -->
