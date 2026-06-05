@@ -3,8 +3,8 @@ chapter_name: "Chapter "
 repo: https://github.com/RickSlc/garde-courses/
 #repo: https://github.com/jhudsl/ottrpal_Template/
 rmd_files: 
-  - index.Rmd
   - what-is-GARDE.Rmd
+  - index.Rmd
   - Health-system-leaders.Rmd
   - PrimaryCare-Leaders.Rmd
   - GeneticCounselor-Leaders.Rmd

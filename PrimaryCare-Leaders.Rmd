@@ -2,7 +2,7 @@
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Primary Care Line Leaders
+# Primary Care Line Leaders{-}
 
 <div style="border:2px solid #222; padding:18px 36px 30px 36px; margin-top:30px; margin-bottom:40px; background:#ffffff; box-sizing:border-box; display:flow-root;">
 

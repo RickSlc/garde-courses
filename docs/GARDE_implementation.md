@@ -1,5 +1,5 @@
 
-# GARDE Implementation
+# GARDE Implementation{-}
 
 ## Governance Review and Approval{-}
 
