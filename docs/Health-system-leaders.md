@@ -1,4 +1,4 @@
-# Health System Leaders
+# Health System Leaders{-}
 
 <div style="border:2px solid #222; padding:18px 36px 30px 36px; margin-top:30px; margin-bottom:40px; background:#ffffff; box-sizing:border-box; display:flow-root;">
 
@@ -68,7 +68,7 @@ In the U.S. in 2020, there were over 1.6M new cancer diagnoses and >600,000 peop
 
 When used to identify patients at elevated risk to harbor a pathogenic variant in a hereditary cancer gene, implementing GARDE may help define a cancer center’s approach to meeting the [Commission on Cancer 2020](https://www.facs.org/quality-programs/cancer-programs/commission-on-cancer/standards-and-resources/2020/) Standard 4.4, Genetic Counseling and Risk Assessment.
 
-Additional use cases can be found [here](file:///Users/acmadeo/University%20of%20Utah%20PHS/Kaphingst%20RA/GARDE/GIT/garde-courses/docs/potential-use-cases.html#healthcare-system-leaders).
+Additional use cases can be found [here](https://garde.utah.edu/potential-use-cases.html).
 
 ## What problem does GARDE solve?{-}
 
@@ -112,6 +112,6 @@ GARDE is highly customizable. The time necessary to implement GARDE will depend 
 
 ## How can I download this information?{-}
 
-If you want to download this information, just click [here](resources/pdfs/Healthcare-system-leaders.pdf){target="_blank"}for a pdf!
+If you want to download this information, just click [here](resources/pdfs/Healthcare-system-leaders.pdf){target="_blank"} for a pdf!
 
 

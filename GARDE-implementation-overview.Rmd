@@ -7,7 +7,7 @@ date: "`r Sys.Date()`"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# GARDE Implementation Overview
+# GARDE Implementation Overview {-}
 
 ## Previous GARDE implementation{-}
 

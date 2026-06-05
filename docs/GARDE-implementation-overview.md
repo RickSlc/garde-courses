@@ -1,11 +1,11 @@
 ---
-date: "2026-06-02"
+date: "2026-06-05"
 
 ---
 
 
 
-# GARDE Implementation Overview
+# GARDE Implementation Overview {-}
 
 ## Previous GARDE implementation{-}
 
