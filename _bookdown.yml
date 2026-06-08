@@ -8,6 +8,7 @@ rmd_files:
   - Health-system-leaders.Rmd
   - PrimaryCare-Leaders.Rmd
   - GeneticCounselor-Leaders.Rmd
+  - General-information.Rmd
   - Use-Cases.Rmd
   - GARDE-implementation-overview.Rmd
   - GARDE_implementation.Rmd

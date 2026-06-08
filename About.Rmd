@@ -1,43 +1,38 @@
 
 # The GARDE team {-}
-
-These credits are based on our [course contributors table guidelines](https://www.ottrproject.org/more_features.html#giving-credits-to-contributors).
-
 &nbsp;
 &nbsp;
 
 |Credits|Names|
 |-------|-----|
 |**The GARDE Team**||
-|Investigators|[Guilherme Del Fiol],  [Kensaku Kawamoto] |
-|Content Author(s) | [Richard Bradshaw] |
-|Content Contributor(s)| [Anne Madeo](https://scholar.google.com/citations?user=_qob5eoAAAAJ&hl=en&authuser=3), [Jiantao Bian] |
-|Technical Teams | |
-|Acknowledgments| |
-|**Production**||
-|Content Publisher(s)| [Richard Bradshaw] |
-|Content Publishing Reviewer(s)| |
-|**Technical**||
-|Course Publishing Engineer(s)| |
-|Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
-|Publishing Maintenance Engineer|[Candace Savonen]|
-|Technical Publishing Stylists|[Carrie Wright], [Ava Hoffman], [Candace Savonen]|
-|Package Developers ([ottrpal]) | [Candace Savonen], [John Muschelli], [Carrie Wright]|
-|**Art and Design**||
-|Illustrator(s)| [Richard Bradshaw] |
-|Figure Artist(s)| [Richard Bradshaw] |
-|**Funding**||
-|Funder(s)| [NCI U24CA204800], [NCI U01CA232826] |
+|Principal Investigators |[Guilherme Del Fiol]<br>[Kensaku Kawamoto] |
+|Co-Investigators (University of Utah) |[Kim Kaphingst]<br>[Chelsey Schlechter]<br>[Polina Kukhareva]<br>[Whitney Maxwell] |
+|Co-Investigators (Weill Cornell Medicine) |[Ravi Sharaf]<br>[Melissa Frey]<br>[Elena Elkin] |
+|Co-Investigators (Wake Forest University) |[Caitlin Allen] | 
+|Technical Team (Software engineers) |[Richard Bradshaw] (GARDE)<br>[Emerson Borsato] (GARDE-Chat)<br>[Alana Woodbury]<br>[Jiantao Bian] |
+|Website contributors | [Anne Madeo]<br>[Jiantao Bian] |
+|**Acknowledgments**| |
+|Funders|[NCI U24CA204800], [NCI U01CA232826] |
 &nbsp;
 
 <!-- Author information -->
 
 [Guilherme Del Fiol]: https://medicine.utah.edu/faculty/mddetail/u0420797
-[Kensaku Kawamoto]:
-https://medicine.utah.edu/faculty/kensaku-kawamoto
+[Kensaku Kawamoto]: https://medicine.utah.edu/faculty/kensaku-kawamoto
 [Richard Bradshaw]: https://scholar.google.com/citations?user=0lAuthAAAAAJ&hl=en
-[Anne Madeo]: https://scholar.google.com/citations?user=_qob5eoAAAAJ&hl=en&authuser=3
-[Jiantao Bian]: https://scholar.google.com/citations?user=FliJ45sAAAAJ&hl=en
+[Kim Kaphingst]: https://profiles.faculty.utah.edu/u0995072
+[Chelsey Schlechter]: https://medicine.utah.edu/faculty/chelsey-schlechter
+[Whitney Maxwell]: https://medicine.utah.edu/faculty/whitney-f-maxwell
+[Polina Kukhareva]: https://medicine.utah.edu/faculty/polina-v-kukhareva
+[Ravi Sharaf]: https://weillcornell.org/ravi-sharaf-md-ms
+[Melissa Frey]: https://weillcornell.org/melissa-k-frey-md
+[Elena Elkin]: https://www.publichealth.columbia.edu/profile/elena-elkin-phd
+[Caitlin Allen]: https://caitlingallen.com/
+[Emerson Borsato]:  https://pubmed.ncbi.nlm.nih.gov/?term=Borsato+EP&sort=pubdate&sort_order=asc&size=200
+[Alana Woodbury]: https://pubmed.ncbi.nlm.nih.gov/?size=200&term=Woodbury+A&cauthor_id=41524720
+[Anne Madeo]: https://scholar.google.com/citations?hl=en&user=_qob5eoAAAAJ 
+[Jiantao Bian]: https://scholar.google.com/citations?hl=en&user=FliJ45sAAAAJ
 [John Muschelli]: https://johnmuschelli.com/
 [Candace Savonen]: https://www.cansavvy.com/
 [Carrie Wright]: https://carriewright11.github.io/
