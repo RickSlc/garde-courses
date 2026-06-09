@@ -13,7 +13,7 @@
 |Technical Team (Software engineers) |[Richard Bradshaw] (GARDE)<br>[Emerson Borsato] (GARDE-Chat)<br>[Alana Woodbury]<br>[Jiantao Bian] |
 |Website contributors | [Anne Madeo]<br>[Jiantao Bian] |
 |**Acknowledgments**| |
-|Funders|[NCI U24CA204800], [NCI U01CA232826] |
+|Support|[NCI U24CA204800], [NCI U01CA232826] |
 &nbsp;
 
 <!-- Author information -->
@@ -30,7 +30,7 @@
 [Elena Elkin]: https://www.publichealth.columbia.edu/profile/elena-elkin-phd
 [Caitlin Allen]: https://caitlingallen.com/
 [Emerson Borsato]:  https://pubmed.ncbi.nlm.nih.gov/?term=Borsato+EP&sort=pubdate&sort_order=asc&size=200
-[Alana Woodbury]: https://pubmed.ncbi.nlm.nih.gov/?size=200&term=Woodbury+A&cauthor_id=41524720
+[Alana Woodbury]: https://scholar.google.com/citations?hl=en&user=4BPfVvoAAAAJ
 [Anne Madeo]: https://scholar.google.com/citations?hl=en&user=_qob5eoAAAAJ 
 [Jiantao Bian]: https://scholar.google.com/citations?hl=en&user=FliJ45sAAAAJ
 [John Muschelli]: https://johnmuschelli.com/

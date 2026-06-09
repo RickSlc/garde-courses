@@ -5,10 +5,10 @@ repo: https://github.com/RickSlc/garde-courses/
 rmd_files: 
   - what-is-GARDE.Rmd
   - index.Rmd
+  - General-information.Rmd
   - Health-system-leaders.Rmd
   - PrimaryCare-Leaders.Rmd
   - GeneticCounselor-Leaders.Rmd
-  - General-information.Rmd
   - Use-Cases.Rmd
   - GARDE-implementation-overview.Rmd
   - GARDE_implementation.Rmd
